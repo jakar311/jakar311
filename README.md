@@ -13,7 +13,7 @@ Programming languages:
 
 
 ### Connect with me
-[<img align="left" alt="linked-in" src="https://www.linkedin.com/in/jakub-krawczak-690516238/" />](https://www.linkedin.com/in/mohammad-faisal-2665b5134)[<img align="left" alt="facebook" src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white" />](https://www.facebook.com/kuba.krawczak.1)<br>
+[<img align="left" alt="linked-in" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/jakub-krawczak-690516238/)[<img align="left" alt="facebook" src="https://img.shields.io/badge/facebook-%231877F2.svg?&style=for-the-badge&logo=facebook&logoColor=white" />](https://www.facebook.com/kuba.krawczak.1)<br>
 ### Expertise
 <img align="left" alt="react" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
 <img align="left" alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
