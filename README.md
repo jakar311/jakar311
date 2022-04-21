@@ -8,6 +8,8 @@ Programming languages:
 - Very good knowledge of: Microsoft Office
 - Good/basic knowldge of: C#, Java, R, Matlab, Gretl
 
+
+
 - 🔭 I’m currently working on multiple front-end projects
 - 🌱 I’m currently learning ...
 
