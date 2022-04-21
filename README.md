@@ -7,9 +7,8 @@ Programming languages:
 - Very good knowledge of: SQL (SQL Server Management Studio), Access, Relational databases
 - Very good knowledge of: Microsoft Office
 - Good/basic knowldge of: C#, Java, R, Matlab, Gretl
-
-
-
+<br>
+<br>
 - 🔭 I’m currently working on multiple front-end projects
 - 🌱 I’m currently learning ...
 
