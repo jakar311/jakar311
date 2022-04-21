@@ -9,6 +9,7 @@ Programming languages:
 - Good/basic knowldge of: C#, Java, R, Matlab, Gretl
 <br>
 - 🔭 I’m currently working on multiple front-end projects
+<br>
 - 🌱 I’m currently learning ...
 
 
