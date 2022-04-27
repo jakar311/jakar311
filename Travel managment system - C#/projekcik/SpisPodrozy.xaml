@@ -1,0 +1,47 @@
+﻿<Window x:Class="projekcik.SpisPodrozy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projekcik"
+        mc:Ignorable="d"
+        Title="Biuro Podrozy" Height="891.333" Width="910.733">
+    <Grid>
+        <DockPanel Grid.ColumnSpan="3">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Plik" Click="MenuItem_Click">
+                    <MenuItem Header="_Otwórz" Click="MenuOtworz_Click"/>
+                    <MenuItem Header="_Zapisz" Click="MenuZapisz_Click"/>
+                    <MenuItem Header="_Wyjdź" Click="MenuWyjdz_Click"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel>
+                <StackPanel Height="91" Width="868" Background="Gainsboro" VerticalAlignment="Top">
+                </StackPanel>
+
+            </StackPanel>
+        </DockPanel>
+        <Label x:Name="lblNazwa" Content="Nazwa" HorizontalAlignment="Left" VerticalAlignment="Top" Height="57" Width="146" Margin="32,46,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="Bold" FontFamily="Dubai Medium"/>
+        <TextBox x:Name="txtCzłonkowiezespolu" HorizontalAlignment="Left" Height="53" TextWrapping="Wrap" Text="Lista zarezerwowanych podróży" VerticalAlignment="Top" Width="881" Margin="10,121,0,0" TextChanged="TextBox_TextChanged" Background="#FFA89375" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" FontFamily="Dubai Medium"/>
+        <ListBox x:Name="lisLoty" SelectionMode="Multiple" HorizontalAlignment="Left"  Height="525"  VerticalAlignment="Top" Width="752" Margin="10,179,0,0" SelectionChanged="BtlCzlonkowie_SelectionChanged">
+
+
+
+
+
+        </ListBox>
+        <Button Content="Zapisz do bazy danych" Margin="650,785,0,0" FontSize="20" Click="Button_Click_6" Height="43" Width="220" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="btnUsun" Content="Usuń" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="769,235,0,0" Height="37" Click="Button_Click_2"/>
+        <Button Content="Dodaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Margin="769,191,0,0" Height="32" Click="Button_Click"/>
+        <Label x:Name="lblTime" Content="" HorizontalAlignment="Left" Height="34" Margin="18,16,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="lblDate" Content="" HorizontalAlignment="Left" Height="34" Margin="725,16,-38,0" VerticalAlignment="Top" Width="216"/>
+        <Button x:Name="btnSortuj" Content="Sortuj" Margin="769,283,0,0" Click="Button_Click_1" Width="124" Height="37" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblSzukanieWylotu" Content="Wylot" Height="49" Width="177" Margin="10,721,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="txtSzukanieWylotu" TextWrapping="Wrap" Margin="202,721,362,90" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
+        <Button x:Name="btnSzukanieWylotu" Content="Znajdź" Margin="556,721,210,90" FontSize="20" Click="btnSzukanieWylotu_Click"/>
+        <Button Content="Resetuj" Margin="702,721,69,90" FontSize="20" Click="Button_Click_3"/>
+        <TextBox x:Name="txtNazwa1" HorizontalAlignment="Left" Margin="202,46,0,0" TextWrapping="Wrap" Width="561" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Height="57" FontSize="19"/>
+        <Button x:Name="btnSortujPESEL" Content="Sortuj po PESELU" Margin="769,330,0,0" Click="Button_Click_4" Width="124" Height="37" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button Content="Wyjdź" HorizontalAlignment="Left" VerticalAlignment="Top" Width="122" Margin="769,665,0,0" Height="39" Click="Button_Click_5" />
+    </Grid>
+</Window>

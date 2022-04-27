@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BiuroPodrozy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <loty>
+    <Podroze>
+      <imie>Arkadiusz</imie>
+      <nazwisko>Nowak</nazwisko>
+      <adres>ul. Długa 8, Rzeszów</adres>
+      <email>Nowak@o2.pl</email>
+      <Telefon>345678765</Telefon>
+      <KodPocztowy>30-456</KodPocztowy>
+      <PESEL>91234569872</PESEL>
+      <sygnatura>SYG-15902</sygnatura>
+      <specjalnePotrzeby>false</specjalnePotrzeby>
+      <ubezpieczenie>true</ubezpieczenie>
+      <dodatkowyBagaz>true</dodatkowyBagaz>
+      <przelecianeKilometry>false</przelecianeKilometry>
+      <wylot>JasionkaRzeszów</wylot>
+      <klasa>ekonomiczna</klasa>
+      <bilet>powrot</bilet>
+      <iloscDzieci>4</iloscDzieci>
+      <celPodrozy>Gruzja_Tbilisi</celPodrozy>
+      <ilosc>2</ilosc>
+    </Podroze>
+    <Podroze>
+      <imie>Beata</imie>
+      <nazwisko>Duda</nazwisko>
+      <adres>ul. Szeroka 19/98, Gdańsk</adres>
+      <email>Duda@interia.pl</email>
+      <Telefon>876234654</Telefon>
+      <KodPocztowy>30-457</KodPocztowy>
+      <PESEL>91234395843</PESEL>
+      <sygnatura>SYG-18603</sygnatura>
+      <specjalnePotrzeby>false</specjalnePotrzeby>
+      <ubezpieczenie>true</ubezpieczenie>
+      <dodatkowyBagaz>true</dodatkowyBagaz>
+      <przelecianeKilometry>true</przelecianeKilometry>
+      <wylot>RębiechowoGdańsk</wylot>
+      <klasa>pierwszaKlasa</klasa>
+      <bilet>powrot</bilet>
+      <iloscDzieci>0</iloscDzieci>
+      <celPodrozy>Wyspy_Zielonego_Przylądka_Praia</celPodrozy>
+      <ilosc>1</ilosc>
+    </Podroze>
+  </loty>
+  <nazwa>Biuro podróży</nazwa>
+</BiuroPodrozy>

@@ -1,0 +1,168 @@
+C:\Users\Jakub Krawczak\Desktop\WPF\bin\Debug\projekcik.exe.config
+C:\Users\Jakub Krawczak\Desktop\WPF\bin\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\WPF\bin\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\WPF\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\WPF\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\WPF\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\SpisPodrozy.g.cs
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\App.g.cs
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik_MarkupCompile.cache
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik_MarkupCompile.lref
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\SpisPodrozy.baml
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\MainWindow.baml
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik.g.resources
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik.Properties.Resources.resources
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik.csproj.GenerateResource.cache
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\WPF\obj\Debug\projekcik.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\projekcik\bin\Debug\projekcik.exe.config
+C:\Users\Jakub Krawczak\Desktop\projekcik\bin\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\projekcik\bin\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\SpisPodrozy.g.cs
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\MainWindow.g.cs
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\App.g.cs
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik_MarkupCompile.cache
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik_MarkupCompile.lref
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\SpisPodrozy.baml
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\MainWindow.baml
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik.g.resources
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik.Properties.Resources.resources
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik.csproj.GenerateResource.cache
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\projekcik\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\projekcik\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\projekcik\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\projekcik\obj\Debug\projekcik.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\projekcik.exe.config
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\SpisPodrozy.g.cs
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\MainWindow.g.cs
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\App.g.cs
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik_MarkupCompile.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik_MarkupCompile.lref
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\SpisPodrozy.baml
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\MainWindow.baml
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.g.resources
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.Properties.Resources.resources
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.csproj.GenerateResource.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekcik\obj\Debug\projekcik.csproj.AssemblyReference.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\projekcik.exe.config
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.csproj.AssemblyReference.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\SpisPodrozy.g.cs
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\MainWindow.g.cs
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\App.g.cs
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik_MarkupCompile.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik_MarkupCompile.lref
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\SpisPodrozy.baml
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\MainWindow.baml
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.g.resources
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.Properties.Resources.resources
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.csproj.GenerateResource.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekcik\obj\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekcik.exe.config
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\SpisPodrozy.g.cs
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\MainWindow.g.cs
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\App.g.cs
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik_MarkupCompile.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik_MarkupCompile.lref
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\SpisPodrozy.baml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\MainWindow.baml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.g.resources
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.Properties.Resources.resources
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.csproj.GenerateResource.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.pdb
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\projekcik.exe.config
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\projekcik.exe
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\projekcik.pdb
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\projekt.dll
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\projekt.pdb
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\bin\Debug\projekt.dll.config
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\SpisPodrozy.g.cs
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\MainWindow.g.cs
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\App.g.cs
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik_MarkupCompile.cache
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik_MarkupCompile.lref
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\SpisPodrozy.baml
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\MainWindow.baml
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.g.resources
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.Properties.Resources.resources
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.csproj.CopyComplete
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.exe
+C:\Users\DELL\Desktop\Program\Projekt C#\projekcik\obj\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekcik.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\bin\Debug\projekt.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\SpisPodrozy.g.cs
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\MainWindow.g.cs
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\App.g.cs
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik_MarkupCompile.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik_MarkupCompile.lref
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekcik.exe.config
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekcik.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekt.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\SpisPodrozy.baml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\MainWindow.baml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik.g.resources
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik.Properties.Resources.resources
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik.csproj.GenerateResource.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik.exe
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekcik\obj\Debug\projekcik.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekcik\obj\Debug\projekcik.csproj.AssemblyReference.cache

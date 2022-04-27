@@ -1,0 +1,60 @@
+C:\Users\Jakub Krawczak\Desktop\projekt\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\projekt\obj\Debug\projekt.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\projekt\obj\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\projekt C#\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\projekt C#\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\projekt C#\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\projekt C#\obj\Debug\projekt.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\projekt C#\obj\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\projekt C#\obj\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\projekt C#\obj\Debug\projekt.csproj.AssemblyReference.cache
+C:\Users\Jakub Krawczak\Desktop\projekt\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\projekt\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\projekt\obj\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\projekt\obj\Debug\projekt.csproj.AssemblyReference.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\obj\Debug\projekt.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\obj\Debug\projekt.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\obj\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo\projekt\obj\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\obj\Debug\projekt.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\obj\Debug\projekt.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\obj\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\prrooo — kopia\projekt\obj\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\obj\Debug\projekt.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\obj\Debug\projekt.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\obj\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\projekt.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\projekt.exe.config
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\bin\Debug\projekt.exe
+C:\Users\Jakub Krawczak\Desktop\Projekt C#\projekt\obj\Debug\projekt.exe
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\projekt.dll.config
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\projekt.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\projekt.pdb
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\EntityFramework.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\EntityFramework.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\obj\Debug\projekt.csproj.CoreCompileInputs.cache
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\obj\Debug\projekt.csproj.CopyComplete
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\obj\Debug\projekt.dll
+C:\Users\Jakub Krawczak\Desktop\Projekt C# — kopia\projekt\obj\Debug\projekt.pdb

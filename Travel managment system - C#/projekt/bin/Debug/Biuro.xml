@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BiuroPodrozy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <loty>
+    <Podroze>
+      <imie>Jakub</imie>
+      <nazwisko>Nowak</nazwisko>
+      <adres>Łamana 34 Gdańsk</adres>
+      <email>Nowak@wp.pl</email>
+      <Telefon>531290527</Telefon>
+      <KodPocztowy>30-697</KodPocztowy>
+      <PESEL>01274543459</PESEL>
+      <sygnatura>SYG-00001</sygnatura>
+      <specjalnePotrzeby>false</specjalnePotrzeby>
+      <ubezpieczenie>true</ubezpieczenie>
+      <dodatkowyBagaz>true</dodatkowyBagaz>
+      <przelecianeKilometry>false</przelecianeKilometry>
+      <wylot>BaliceKraków</wylot>
+      <klasa>biznesowa</klasa>
+      <bilet>powrot</bilet>
+      <iloscDzieci>1</iloscDzieci>
+      <celPodrozy>Grecja_Zakynthos</celPodrozy>
+      <ilosc>2</ilosc>
+    </Podroze>
+    <Podroze>
+      <imie>Miłosz</imie>
+      <nazwisko>Gołdyn</nazwisko>
+      <adres>Łużycka 12 Poznań</adres>
+      <email>Mil.o2.pl</email>
+      <Telefon>531495527</Telefon>
+      <KodPocztowy>30-689</KodPocztowy>
+      <PESEL>01273343459</PESEL>
+      <sygnatura>SYG-00002</sygnatura>
+      <specjalnePotrzeby>true</specjalnePotrzeby>
+      <ubezpieczenie>true</ubezpieczenie>
+      <dodatkowyBagaz>false</dodatkowyBagaz>
+      <przelecianeKilometry>false</przelecianeKilometry>
+      <wylot>BaliceKraków</wylot>
+      <klasa>ekonomiczna</klasa>
+      <bilet>jednaStrona</bilet>
+      <iloscDzieci>2</iloscDzieci>
+      <celPodrozy>Tajlandia_Bangkoku</celPodrozy>
+      <ilosc>1</ilosc>
+    </Podroze>
+  </loty>
+  <nazwa>System biura podrozy</nazwa>
+</BiuroPodrozy>

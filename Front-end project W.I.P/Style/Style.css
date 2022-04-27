@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: auto;
+    scrollbar-color: #da840b #464444;
+}
+
+body {
+    height: 200vh;
+    overflow-x: hidden;
+    font-family: 'Teko', sans-serif;
+    overflow-y: overlay;
+    margin-right: 15px;
+}
+
+.notActive {
+    opacity: 0;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #484848;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ff9d00;
+}
+
+/* chatBox */
+.gFMxIq {
+    margin-right: 20px;
+    transition: .3s;
+}
+
+/* backToTop */
+.backToTop {
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    background-color: rgb(228, 114, 0);
+}
+
+.backToTop i {
+    color: #dedede;
+    transition: .5s;
+    line-height: 60px;
+    font-size: 3.5rem;
+}
+
+.backToTop:hover {
+    transform: scale(.8);
+}
+
+/* Landing Page */
+.landingPage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.landingPageBgc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../Images/TŁO.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tc {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    cursor: url('../Images/dumbbell.png'), auto;
+}
+
+.firstTrainer,
+.firstTrainer2,
+.sixthTrainer,
+.sixthTrainer2 {
+    height: 55vh;
+}
+
+.secondTrainer,
+.secondTrainer2,
+.fifthTrainer,
+.fifthTrainer2 {
+    height: 67vh;
+}
+
+.thirdTrainer,
+.thirdTrainer2,
+.fourthTrainer,
+.fourthTrainer2 {
+    height: 82vh;
+}
+
+.landingFog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    bottom: 0;
+    background-image: url(../Images/MGŁA.png);
+}
+
+.landingFog img {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+}
+
+.trainersContainer {
+    align-items: flex-end;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.trainer {
+    z-index: 1;
+
+}
+
+
+.trainer2 {
+    opacity: 0;
+    position: absolute;
+}
+
+/* NAVBAR */
+.mainNavbar {
+    position: fixed;
+    display: flex;
+    background-color: rgba(61, 61, 61, 0.7);
+    height: 130px;
+    width: 100%;
+    z-index: 2;
+    align-items: center;
+    transition: opacity .5s;
+}
+
+.navbarLogo {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+    border-radius: 50%;
+    margin-left: 70px;
+}
+
+.navbarLogo p {
+    font-weight: lighter;
+    font-size: 2.5rem;
+    line-height: 120px;
+}
+
+.navbarButtons {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 2vw;
+    align-items: center;
+}
+
+.navbarButtons a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    padding: 7px 30px 0 30px;
+    transition: .3s;
+}
+
+.startJourney {
+    border-radius: 10px;
+    background-color: #d47908;
+}
+
+.navbarButtons a:hover {
+    color: #d47908
+}
+
+.navbarButtons .startJourney:hover {
+    color: white;
+    box-shadow: 0 0 40px -10px black inset;
+}
+
+.language {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 30px;
+    top: 15px;
+    padding: 5px 5px 0 5px;
+    background-color: #5a5a5a;
+    height: 30px;
+    overflow-y: hidden;
+    transition: .5s;
+}
+
+.languageOption:nth-child(2) {
+    margin-top: 15px;
+}
+
+.language:hover {
+    height: 207px;
+}
+
+.language img {
+    cursor: pointer;
+    height: 20px;
+    margin-bottom: 7px;
+}
+
+/* Najechanie na trenera */
+.trainer:hover+.trainer2 {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.trainer:hover {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    transition-delay: .2s;
+}
+
+.trainer:not(:hover)+.trainer2 {
+    opacity: 0;
+    transition: opacity .125s linear;
+    transition-delay: .125s;
+}
+
+.trainer:not(:hover) {
+    opacity: 1;
+    transition: opacity .125s linear;
+}
+
+/* Informacja o trenerze */
+.trainerStatue {
+    position: absolute;
+    height: 95%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bgcInfo {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.bgcInfo h1 {
+    position: absolute;
+    font-size: 6rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-shadow: 0px 0px 25px #000000;
+}
+
+.mediaIcons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    left: 0;
+    bottom: 30px;
+    font-weight: lighter;
+}
+
+.iconTextContainer div p {
+    overflow-x: hidden;
+
+}
+
+.iconTextContainer div p span {
+    height: 50px;
+    display: block;
+    overflow-y: hidden;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-150%);
+    padding-left: 10px;
+}
+
+.iconTextContainer div p span:hover {
+    transform: translateX(0);
+    cursor: pointer;
+}
+
+.iconTextContainer div i:hover+p span {
+    transform: translateX(0);
+
+}
+
+.iconTextContainer div i {
+    cursor: pointer;
+}
+
+.iconTextContainer div {
+    display: flex;
+    cursor: context-menu;
+    padding-left: 30px;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.iconTextContainer {
+    display: flex;
+}
+
+.trainerPhotoContainer {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.trainerName {
+    display: block;
+    color: rgba(250, 250, 250, 0.7);
+    font-size: 2.4rem;
+    width: 220px;
+    height: 60px;
+    background-color: rgba(8, 8, 8, .6);
+    text-align: center;
+    line-height: 60px;
+    margin-top: 7%;
+    animation: pulsating 4s infinite;
+
+}
+
+.trainerAchievementsContainer h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.trainerAchievementsContainer h2:nth-of-type(1) {
+    border-bottom: 9px solid #000;
+}
+
+.trainerAchievementsContainer h2:nth-of-type(3) {
+    border-top: 9px solid #000;
+}
+
+.trainerAchievementsContainer>p {
+    padding-top: 10px;
+    border-top: 9px solid #000;
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+.trainerAchievementsContainer ul li i {
+    margin-right: 15px;
+    line-height: 57px;
+}
+
+.trainerAchievementsContainer ul li {
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+
+}
+
+.trainerAchievementsContainer ul li p {
+    line-height: 60px;
+}
+
+.trainerAchievementsContainer ul {
+    padding-bottom: 5px;
+}
+
+.trainerAchievementsContainer {
+    padding: 0 50px;
+    position: absolute;
+    width: 35%;
+    min-height: 92%;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    font-weight: lighter;
+    box-shadow: 0 0 30px #222, 0 0 60px -30px #111 inset;
+
+}
+
+.moreAboutMe {
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: 20%;
+    color: #000;
+    bottom: 10px;
+    right: 15px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    transition: .3s;
+}
+
+.moreAboutMe:hover {
+    color: rgb(36, 36, 36);
+    border-color: rgb(36, 36, 36);
+}
+
+@keyframes pulsating {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+
+
+}
+
+/* Close button */
+.closeButton {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 10px;
+}
+
+.closeButton i {
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.closeButton i:hover {
+    font-size: 4rem;
+}
+
+.closeButton i:active {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Komentarze */
+.honeycomb {
+    position: absolute;
+    top: 150px;
+    left: -100px;
+}
+
+.hexagon {
+    position: relative;
+    display: inline-block;
+    /* left/right margin = 25% of width + spacing */
+    margin: 3px 28px;
+    text-align: center;
+    z-index: 105;
+}
+
+.hexagon,
+.hexagon::before,
+.hexagon::after {
+
+    /* wysokość = szerokość * 1.732 */
+    width: 100px;
+    height: 173.2px;
+}
+
+.hexagon::before {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(-60deg);
+}
+
+.hexagon::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: rotate(60deg);
+}
+
+.hexagon:nth-child(even) {
+    /* 50% wysokości + odstęp */
+    top: 89.6px;
+}
+
+
+
+.hexagontent .cumstomerPhoto {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    left: 50%;
+    top: -78px;
+    transform: translateX(-50%);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hexagontent p {
+    user-select: none;
+    position: absolute;
+    font-size: 1rem;
+    top: -13px;
+    padding: 0 5px;
+}
+
+.hexagontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    z-index: 100;
+}
+
+.ibws-fix {
+    font-size: 0;
+}
+
+.unvisible {
+    visibility: hidden;
+}
+
+/* counterPage */
+.counterPage {
+    height: 100vh;
+    width: 100%;
+    background-color: #d47908;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+.counterPage>div {
+    width: 98%;
+    max-height: 31%;
+    border: 5px solid black;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0 0 20px inset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-weight: lighter;
+    transition: opacity 1s;
+}
+
+
+.counterPage>div>p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+
+.fa-hourglass {
+    font-weight: lighter;
+}
+
+.counterPage>div img {
+    height: 11vw;
+
+}
+
+.counterPage span {
+    font-size: 7vw;
+}
+
+/* aboutPage */
+.aboutPage {
+    height: 100vh;
+    display: flex;
+}
+
+.aboutPage article {
+    color: white;
+    width: 60%;
+    background-color: black;
+    text-align: center;
+    padding: 10px 50px;
+}
+
+.aboutPage article h1 {
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 7rem;
+    transition: opacity 1s;
+}
+
+.aboutPage article p {
+    /* line-height: 130%; */
+    font-weight: lighter;
+    font-size: 3rem;
+    transition: opacity 1s;
+}
+
+.aboutPageBackgroundImage {
+    width: 40%;
+    background-image: url(../Images/aboutPageBGI.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+
+}
+
+/* Responsywność */
+@media (orientation:landscape) and (max-width:1800px) {
+    .mainNavbar {
+        height: 120px;
+    }
+
+    .navbarLogo {
+        height: 110px;
+        width: 110px;
+    }
+
+
+    .language {
+        height: 27px;
+    }
+
+    .languageOption:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    .language:hover {
+        height: 181px;
+    }
+
+    .language img {
+        height: 17px;
+    }
+
+    .trainerAchievementsContainer>p {
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    .trainerAchievementsContainer {
+        max-width: 530px;
+    }
+
+    .trainerAchievementsContainer ul li i {
+        line-height: 42px;
+    }
+
+    .trainerAchievementsContainer ul li {
+        font-size: 2rem;
+    }
+
+    .trainerAchievementsContainer ul li p {
+        line-height: normal;
+    }
+
+    .trainerAchievementsContainer h2 {
+        font-size: 2rem;
+        padding-top: 10px;
+    }
+
+    .trainerAchievementsContainer ul {
+        padding-bottom: 10px;
+    }
+
+    .bgcInfo h1 {
+        font-size: 5rem;
+
+    }
+
+    .mediaIcons {
+        font-size: 2rem;
+        left: -10px;
+        bottom: 10px;
+    }
+
+    .iconTextContainer div p span {
+        height: 40px;
+    }
+
+    .trainerName {
+        font-size: 2rem;
+        width: 190px;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 6%;
+    }
+
+    .moreAboutMe {
+        line-height: 23px;
+        font-size: 1.5rem;
+    }
+
+    .honeycomb {
+        top: 125px;
+        left: -50px;
+    }
+
+    .hexagon {
+        /* left/right margin = 25% of width + spacing */
+        margin: 2px 22px;
+    }
+
+    .hexagon,
+    .hexagon::before,
+    .hexagon::after {
+
+        /* wysokość = szerokość * 1.732 */
+        width: 80px;
+        height: 138.56px;
+    }
+
+    .hexagon:nth-child(even) {
+        /* 50% wysokości + odstęp */
+        top: 71.28px;
+    }
+
+    .hexagontent .cumstomerPhoto {
+        height: 45px;
+        width: 45px;
+        top: -65px;
+    }
+
+    .hexagontent p {
+        font-size: .9rem;
+        top: -18px;
+    }
+
+    .aboutPage article p {
+        font-size: 2.5rem;
+    }
+}

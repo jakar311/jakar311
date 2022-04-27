@@ -1,0 +1,792 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>projekt</name>
+    </assembly>
+    <members>
+        <member name="T:projekt.BiuroPodrozy">
+            <summary>
+            Klasa BiuroPodróży przechowująca podróże, korzystająca z interfejsów IBiuro oraz ICloneable
+            </summary>
+        </member>
+        <member name="P:projekt.BiuroPodrozy.BiuroId">
+            <summary>
+            Identyfikator (klucz) o nazwe BiuroID
+            </summary>
+        </member>
+        <member name="P:projekt.BiuroPodrozy.loty">
+            <summary>
+            Zmodyfikowane pole loty, które jest listą
+            </summary>
+        </member>
+        <member name="F:projekt.BiuroPodrozy.nazwa">
+            <summary>
+            Nazwa biura podróży
+            </summary>
+        </member>
+        <member name="P:projekt.BiuroPodrozy.Nazwa">
+            <summary>
+            Hermetyzacja pola nazwa
+            </summary>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.#ctor">
+            <summary>
+            Konstruktor nieparametryczny tworzący nową listę 'loty'
+            </summary>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.#ctor(System.String)">
+            <summary>
+            Konstruktor parametryczny ustawiający pole 'nazwa'
+            </summary>
+            <param name="nazwa">Nazwa biura podróży</param>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.ZapiszDoBazy">
+            <summary>
+            Metoda zapisująca do bazy danych
+            </summary>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.OdczytZBazy">
+            <summary>
+            Metoda odczytująca baze danych
+            </summary>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.DodajLot(projekt.Podroze)">
+            <summary>
+            Metoda dodająca wybraną podróż
+            </summary>
+            <param name="t">Wybrany lot do dodania</param>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.UsunLot(projekt.Podroze)">
+            <summary>
+            Metoda usuwająca wybraną podróż
+            </summary>
+            <param name="t">Wybrany lot do usunięcia</param>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.UsunLot(System.String)">
+            <summary>
+            Metoda usuwająca podróż z danym PESELEM
+            </summary>
+            <param name="PESEL">Wybrany PESEL</param>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.CzyPodrozJestWBiurzePodrozy(projekt.Podroze)">
+            <summary>
+            Metoda sprawdzajaca czy dana podróż jest już w biurze podróży
+            </summary>
+            <param name="podroz">wybrana podróż</param>
+            <returns>true jeśli podroz jest już dodana albo false jeśli nie jest </returns>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.WyszukajPodroze(System.String)">
+            <summary>
+            Metoda, która wyszukuje podróż przez podanie nazwy lotniska z którego jest wylot
+            </summary>
+            <param name="wylot">Nazwa lotniska</param>
+            <returns>Zwraca listę podróży</returns>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.Sortuj">
+            <summary>
+            Metoda, która sortuje loty (Po sygnaturze)
+            </summary>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.SortujPoPESEL">
+            <summary>
+            Metoda, która sortuje loty według peselu
+            </summary>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.ZapiszXML(System.String,projekt.BiuroPodrozy)">
+            <summary>
+            Metoda zapisująca BiuroPodrozy do pliku xml 
+            </summary>
+            <param name="nazwa">Nazwa pliku XML</param>
+            <param name="z">Biuro podróży do zapisania</param>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.OdczytajXML(System.String)">
+            <summary>
+            Metoda odczytująca BiuroPodrozy z pliku xml
+            </summary>
+            <param name="nazwa">Nazwa pliku xml do odczytania</param>
+            <returns>Zwraca odczytane biuro podróży</returns>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.Clone">
+            <summary>
+            Metoda tworząca płytką kopię obiektu BiuroPodrozy
+            </summary>
+            <returns>Płytka kopia obiektu</returns>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.DeepCopy">
+            <summary>
+            Metoda tworząca głęboką kopię obiektu BiuroPodrozy
+            </summary>
+            <returns>Głęboka kopia obiektu</returns>
+        </member>
+        <member name="M:projekt.BiuroPodrozy.ToString">
+            <summary>
+            Metoda wypisująca nazwę, oraz loty z biura podróży
+            </summary>
+            <returns>Wypisana nazwa oraz lista podróży</returns>
+        </member>
+        <member name="T:projekt.Ceny">
+            <summary>
+            Klasa Ceny, przechowująca ceny podróży, biletów oraz dodatkowych usług
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Włochy_Kreta">
+            <summary>
+            Pole przechowujące cenę dla lotu na Kretę
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Grecja_Zakynthos">
+            <summary>
+            Pole przechowujące cenę dla lotu na Zakynthos
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Tunezja_Tunisie">
+            <summary>
+            Pole przechowujące cenę dla lotu do Tunezji
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Wyspy_Zielonego_Przylądka_Praia">
+            <summary>
+            Pole przechowujące cenę dla lotu do Praii
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Portugalia_Maderze">
+            <summary>
+            Pole przechowujące cenę dla lotu na Madere
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Egipt_Kairze">
+            <summary>
+            Pole przechowujące cenę dla lotu do Kairu
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Gruzja_Tbilisi">
+            <summary>
+            Pole przechowujące cenę dla lotu do Tibilisi
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Tajlandia_Bangkoku">
+            <summary>
+            Pole przechowujące cenę dla lotu do Bangkoku
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.Bułgaria_Sofia">
+            <summary>
+            Pole przechowujące cenę dla lotu do Sofii
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.jedna_osoba">
+            <summary>
+            Pole przechowujące cenę lotu dla dorosłej osoby
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.dziecko">
+            <summary>
+            Pole przechowujące cenę lotu dla dziecka
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.ekonomiczna">
+            <summary>
+            Pole przechowujące cenę w klasie ekonomicznej
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.biznesowa">
+            <summary>
+            Pole przechowujące cenę w klasie biznesowe
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.pierwsza_klasa">
+            <summary>
+            Pole przechowujące cenę w pierwszej klasie
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.specjalnePotrzeby">
+            <summary>
+            Pole przechowujące cenę za specjalne potrzeby
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.kilometry">
+            <summary>
+            Pole przechowujące zniżkę za kilometry
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.ubezpieczenie">
+            <summary>
+            Pole przechowujące cenę za ubezpieczenie
+            </summary>
+        </member>
+        <member name="F:projekt.Ceny.dodatkowy_bagaż">
+            <summary>
+            Pole przechowujące cenę za dodatkowy bagaż
+            </summary>
+        </member>
+        <member name="M:projekt.Ceny.#ctor">
+            <summary>
+            Konstruktor nieparametryczny przypisujący ceny poszczególnych usług
+            </summary>
+        </member>
+        <member name="T:projekt.IBiuro">
+            <summary>
+            Interfejs IBiuro przechowujący metody dodawania, usuwania, wyszukiwania oraz sprawdzania czy dany lot jest już w biurze
+            </summary>
+        </member>
+        <member name="T:projekt.Model1">
+            <summary>
+            Klasa Model1 potrzebna do zapisu biura podróży do bazy danych
+            </summary>
+        </member>
+        <member name="M:projekt.Model1.#ctor">
+            <summary>
+            Konstruktor nieparametryczny Model1
+            </summary>
+        </member>
+        <member name="P:projekt.Model1.BiuroPod">
+            <summary>
+            Kolekcja obiektu DBSet o nazwie BiuroPod
+            </summary>
+        </member>
+        <member name="P:projekt.Model1.PodrozeWBiurze">
+            <summary>
+            Kolekcja obiektu DbSet o nazwie PodrozWBiurze
+            </summary>
+        </member>
+        <member name="T:projekt.Lotniska">
+            <summary>
+            Enumeracja o nazwie lotniska, zawierająca różne lotniska
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.OkęcieWarszawa">
+            <summary>
+            OkęcieWarszawa
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.BaliceKraków">
+            <summary>
+            BaliceKraków
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.RębiechowoGdańsk">
+            <summary>
+            RębiechowoGdańsk
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.PyrzowiceKatowice">
+            <summary>
+            PyrzowiceKatowice
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.StrachowiceWrocław">
+            <summary>
+            StrachowiceWrocław
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.ModlinWarszawa">
+            <summary>
+            ModlinWarszawa
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.ŁawicaPoznań">
+            <summary>
+            ŁawicaPoznań
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.JasionkaRzeszów">
+            <summary>
+            JasionkaRzeszów
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.GoleniówSzczecin">
+            <summary>
+            GoleniówSzczecin
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.ŚwidnikLublin">
+            <summary>
+            ŚwidnikLublin
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.SzwederowoBydgoszcz">
+            <summary>
+            SzwederowoBydgoszcz
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.LublinekŁódź">
+            <summary>
+            LublinekŁódź
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.SzymanyOlsztyn">
+            <summary>
+            SzymanyOlsztyn
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.BabimostZielonaGóra">
+            <summary>
+            BabimostZielonaGóra
+            </summary>
+        </member>
+        <member name="F:projekt.Lotniska.SadkówRadom">
+            <summary>
+            SadkówRadom
+            </summary>
+        </member>
+        <member name="T:projekt.Klasy">
+            <summary>
+            Enumeracja o nazwie klasy, zawierająca możliwe do wybrania klasy lotu
+            </summary>
+        </member>
+        <member name="F:projekt.Klasy.ekonomiczna">
+            <summary>
+            klasa ekonomiczna
+            </summary>
+        </member>
+        <member name="F:projekt.Klasy.biznesowa">
+            <summary>
+            klasa biznesowa
+            </summary>
+        </member>
+        <member name="F:projekt.Klasy.pierwszaKlasa">
+            <summary>
+            pierwsza klasa
+            </summary>
+        </member>
+        <member name="T:projekt.Bilety">
+            <summary>
+            Enumeracja o nazwie bilety, zawierająca dwie możliwości biletu ; w jedną stronę lub w dwie strony
+            </summary>
+        </member>
+        <member name="F:projekt.Bilety.jednaStrona">
+            <summary>
+            bilet w jedną strone
+            </summary>
+        </member>
+        <member name="F:projekt.Bilety.powrot">
+            <summary>
+            bilet w obie strony
+            </summary>
+        </member>
+        <member name="T:projekt.cele">
+            <summary>
+            Enumeracja o nazwie cele, zawierająca różne miejsca docelowe dla wybranej podróży
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Włochy_Kreta">
+            <summary>
+            Włochy_Kreta
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Grecja_Zakynthos">
+            <summary>
+            Grecja_Zakynthos
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Tunezja_Tunisie">
+            <summary>
+            Tunezja_Tunisie
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Wyspy_Zielonego_Przylądka_Praia">
+            <summary>
+            Wyspy_Zielonego_Przylądka_Praia
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Portugalia_Maderze">
+            <summary>
+            Portugalia_Maderze
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Egipt_Kairze">
+            <summary>
+            Egipt_Kairze
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Gruzja_Tbilisi">
+            <summary>
+            Gruzja_Tbilisi
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Tajlandia_Bangkoku">
+            <summary>
+            Tajlandia_Bangkoku
+            </summary>
+        </member>
+        <member name="F:projekt.cele.Bułgaria_Sofia">
+            <summary>
+            Bułgaria_Sofia
+            </summary>
+        </member>
+        <member name="T:projekt.PESELComparator">
+            <summary>
+            Klasa PESELComparator implementująca interfejs Comparer
+            </summary>
+        </member>
+        <member name="M:projekt.PESELComparator.Compare(projekt.Podroze,projekt.Podroze)">
+            <summary>
+            
+            </summary>
+            <param name="x">pierwsza podróż do porównania</param>
+            <param name="y">druga podróż do porównania</param>
+            <returns>0 lub 1</returns>
+        </member>
+        <member name="T:projekt.Podroze">
+            <summary>
+            Klasa Podroze przechowywująca informację o osobach, kierunku podróży i dodatkowych usługach.
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.PodrozeId">
+            <summary>
+            Identyfikator (klucz) o nazwe BiuroID
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.BiuroId">
+            <summary>
+            Identyfikator o nazwe BiuroID z klasy BiuroPodrozy
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.BiuroPod">
+            <summary>
+            Zmodyfikowane pole BiuroPod
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.numer">
+            <summary>
+            Numer
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.sygnatura">
+            <summary>
+            Sugnatura
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.specjalnePotrzeby">
+            <summary>
+            Specjalne potrzeby
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.ubezpieczenie">
+            <summary>
+            Ubezpieczenie
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.dodatkowyBagaz">
+            <summary>
+            Dodatkowy bagaż
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.przelecianeKilometry">
+            <summary>
+            Przeleciane kilometry
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.wylot">
+            <summary>
+            Wylot
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.klasa">
+            <summary>
+            Klasa
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.bilet">
+            <summary>
+            Bilet
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.iloscDzieci">
+            <summary>
+            Ilosc dzieci
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.celPodrozy">
+            <summary>
+            Cel podróży
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.ilosc">
+            <summary>
+            Ilosc
+            </summary>
+        </member>
+        <member name="F:projekt.Podroze.stopa_podatku">
+            <summary>
+            Stopa podatku
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.Numer">
+            <summary>
+            Hermetyzacja pola numer
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.Sygnatura">
+            <summary>
+            Hermetyzacja pola sygnatura
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.SpecjalnePotrzeby">
+            <summary>
+            Hermetyzacja pola specjalnePotrzeby
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.Ubezpieczenie">
+            <summary>
+            Hermetyzacja pola ubezpieczenie
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.DodatkowyBagaz">
+            <summary>
+            Hermetyzacja pola dodatkowyBagaz
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.PrzelecianeKilometry">
+            <summary>
+            Hermetyzacja pola przelecianeKilometry
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.Wylot">
+            <summary>
+            Hermetyzacja pola wylot
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.Klasa">
+            <summary>
+            Hermetyzacja pola klasa
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.Bilet">
+            <summary>
+            Hermetyzacja pola bilet
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.IloscDzieci">
+            <summary>
+            Hermetyzacja pola iloscDzieci
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.CelPodrozy">
+            <summary>
+            Hermetyzacja pola celPodrozy
+            </summary>
+        </member>
+        <member name="P:projekt.Podroze.Ilosc">
+            <summary>
+            Hermetyzacja pola ilosc
+            </summary>
+        </member>
+        <member name="M:projekt.Podroze.#cctor">
+            <summary>
+            Konstruktor satatyczny ustawiający wartosci pol ; stopa_podatku oraz numer
+            </summary>
+        </member>
+        <member name="M:projekt.Podroze.#ctor">
+            <summary>
+            Kontstruktor nieparametryczny ustawiający pole sygnatura
+            </summary>
+        </member>
+        <member name="M:projekt.Podroze.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,projekt.Lotniska,projekt.cele,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,projekt.Klasy,projekt.Bilety,System.Int32)">
+            <summary>
+            Konstruktor parametryczny ustawiajacy poszczególne pola
+            </summary>
+            <param name="imie"></param>
+            <param name="nazwisko"></param>
+            <param name="PESEL"></param>
+            <param name="adres"></param>
+            <param name="kodPocztowy"></param>
+            <param name="telefon"></param>
+            <param name="email"></param>
+            <param name="wylot"></param>
+            <param name="celPodrozy"></param>
+            <param name="ilosc"></param>
+            <param name="specjalnePotrzeby"></param>
+            <param name="ubezpieczenie"></param>
+            <param name="dodatkowyBagaz"></param>
+            <param name="przelecianeKilometry"></param>
+            <param name="klasa"></param>
+            <param name="bilet"></param>
+            <param name="iloscDzieci"></param>
+        </member>
+        <member name="M:projekt.Podroze.PoliczPodatek(System.Double)">
+            <summary>
+            Metoda obliczająca podatek na podstawie podanej kwoty
+            </summary>
+            <param name="Kwota"></param>
+            <returns>Podatek</returns>
+        </member>
+        <member name="M:projekt.Podroze.PoliczSumeCzesciowa">
+            <summary>
+            Metoda licząca sumę częściową
+            </summary>
+            <returns>suma częściowa</returns>
+        </member>
+        <member name="M:projekt.Podroze.PoliczKoszt">
+            <summary>
+            Metoda dodająca całkowity koszt ; sumę częściową + podatek od tej sumy częściowej
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:projekt.Podroze.Clone">
+            <summary>
+            Metoda tworząca płytką kopię 
+            </summary>
+            <returns>Płytka kopia</returns>
+        </member>
+        <member name="M:projekt.Podroze.CompareTo(projekt.Podroze)">
+            <summary>
+            Metoda porównująca sygnaturę lub w dalszej kolejności nazwisko
+            </summary>
+            <param name="obj"></param>
+            <returns>int</returns>
+        </member>
+        <member name="M:projekt.Podroze.Equals(projekt.Podroze)">
+            <summary>
+            Motoda powrównująca podróże po ich sygnaturach
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:projekt.Podroze.ToString">
+            <summary>
+            Metoda wypisująca numer, miejsce wylotu, cel docelowy i inne informacje o locie
+            </summary>
+            <returns>Tekst z informacjami o podróży</returns>
+        </member>
+        <member name="T:projekt.ZlyTelefonException">
+            <summary>
+            Klasa ZlyTelefonException dziedzicząca po klasie Exception, która sprawdza czy telefon został podany prawidłowo
+            </summary>
+        </member>
+        <member name="M:projekt.ZlyTelefonException.#ctor">
+            <summary>
+            Konstruktor nieparametryczny wyjątku
+            </summary>
+        </member>
+        <member name="M:projekt.ZlyTelefonException.#ctor(System.String)">
+            <summary>
+            Konstruktor parametryczny wyjątku
+            </summary>
+            <param name="msg">Wiadomość tekstowa przy wywołaniu wyjątku</param>
+        </member>
+        <member name="T:projekt.ZlyKodPocztowyException">
+            <summary>
+            Klasa ZlyKodPocztowyException dziedzicząca po klasie Exception, która sprawdza czy kod pocztowy został podany prawidłowo
+            </summary>
+        </member>
+        <member name="M:projekt.ZlyKodPocztowyException.#ctor">
+            <summary>
+            Konstruktor nieparametryczny wyjątku
+            </summary>
+        </member>
+        <member name="M:projekt.ZlyKodPocztowyException.#ctor(System.String)">
+            <summary>
+            Konstruktor parametryczny wyjątku
+            </summary>
+            <param name="msg">Wiadomość tekstowa przy wywołaniu wyjątku</param>
+        </member>
+        <member name="T:projekt.ZlyPESELException">
+            <summary>
+            Klasa ZlyPESELException dziedzicząca po klasie Exception, która sprawdza czy pesel został podany prawidłowo
+            </summary>
+        </member>
+        <member name="M:projekt.ZlyPESELException.#ctor">
+            <summary>
+            Konstruktor nieparametryczny wyjątku
+            </summary>
+        </member>
+        <member name="M:projekt.ZlyPESELException.#ctor(System.String)">
+            <summary>
+            Konstruktor parametryczny wyjątku
+            </summary>
+            <param name="msg">Wiadomość tekstowa przy wywołaniu wyjątku</param>
+        </member>
+        <member name="T:projekt.Osoba">
+            <summary>
+            Klasa zawierajaca dane dotyczące osoby
+            </summary>
+        </member>
+        <member name="F:projekt.Osoba.imie">
+            <summary>
+            Imie osoby
+            </summary>
+        </member>
+        <member name="F:projekt.Osoba.nazwisko">
+            <summary>
+            Nazwisko osoby
+            </summary>
+        </member>
+        <member name="F:projekt.Osoba.adres">
+            <summary>
+            adres 
+            </summary>
+        </member>
+        <member name="F:projekt.Osoba.kodPocztowy">
+            <summary>
+            Kod pocztowy
+            </summary>
+        </member>
+        <member name="F:projekt.Osoba.telefon">
+            <summary>
+            telefon 
+            </summary>
+        </member>
+        <member name="F:projekt.Osoba.email">
+            <summary>
+            email 
+            </summary>
+        </member>
+        <member name="F:projekt.Osoba.pESEL">
+            <summary>
+            PESEL 
+            </summary>
+        </member>
+        <member name="P:projekt.Osoba.Telefon">
+            <summary>
+            Hermetyzacja pola telefon i sprawdzenie czy numer telefonu został wpisany poprawnie
+            </summary>
+        </member>
+        <member name="P:projekt.Osoba.KodPocztowy">
+            <summary>
+            Hermetyzacja pola kodPocztowy i sprawdzenie czy kod pocztowy został wpisany poprawnie
+            </summary>
+        </member>
+        <member name="P:projekt.Osoba.PESEL">
+            <summary>
+            Hermetyzacja pola PESEL i sprawdzenie czy pesel został wpisany poprawnie
+            </summary>
+        </member>
+        <member name="P:projekt.Osoba.Email">
+            <summary>
+            Hermetyzacja pola email
+            </summary>
+        </member>
+        <member name="P:projekt.Osoba.Imie">
+            <summary>
+            Hermetyzacja pola imie
+            </summary>
+        </member>
+        <member name="P:projekt.Osoba.Nazwisko">
+            <summary>
+            Hermetyzacja pola nazwisko
+            </summary>
+        </member>
+        <member name="P:projekt.Osoba.Adres">
+            <summary>
+            Hermetyzacja pola adres
+            </summary>
+        </member>
+        <member name="M:projekt.Osoba.#ctor">
+            <summary>
+            Konstruktor podstawowy
+            </summary>
+        </member>
+        <member name="M:projekt.Osoba.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Konstruktor parametryczny ; nadaje imie, nazwisko, pesel, adres, kod pocztowy, telefon oraz email danej osoby
+            </summary>
+        </member>
+        <member name="M:projekt.Osoba.ToString">
+            <summary>
+            Metoda wypisująca Osobę w konsoli
+            </summary>
+            <returns>Zwraca tekst z danymi o osobie</returns>
+        </member>
+    </members>
+</doc>

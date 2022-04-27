@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>projekcik</name>
+    </assembly>
+    <members>
+        <member name="T:projekcik.App">
+            <summary>
+            Logika interakcji dla klasy App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:projekcik.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:projekcik.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:projekcik.SpisPodrozy">
+            <summary>
+            SpisPodrozy
+            </summary>
+        </member>
+        <member name="F:projekcik.SpisPodrozy.biuro">
+            <summary>
+            Deklaracja zmiennej biuro z klasy BiuroPodrozy
+            </summary>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.#ctor">
+            <summary>
+            Konstruktor nieparametryczny ustawiający datę i godzinę oraz tworzący nowe puste biuro podróży jeśli  nie wgramy włąsnego pliku XML (Opcja otwórz po wejściu w plik)
+            </summary>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda tworząca przycisk otwierający okno do dodawania podróży
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Otworz">
+            <summary>
+            Metoda do otwierania formularza i dodawania podróży do głównej listy
+            </summary>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.MenuOtworz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Przycisk otwórz w "plik", wgrywamy nasz wlasny plik XML
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.MenuZapisz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Przycisk zapisz w "plik", otwiera okno zapisu pliku XML z naszym biurem podróży
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.MenuWyjdz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Przycisk wyjdź w "plik". Wychodzi z GUI (wcześniej pyta czy napewno)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Button_Click_2(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Przycisk usuń, usuwa wczesniej zaznaczone przez nas podróże z listy
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Button_Click_1(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Srtowanie podróży w liście
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.btnSzukanieWylotu_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Wyświetlanie listy podróży z wylotem z podanego miejsca
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Button_Click_3(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Resetowanie listy do stanu początkowego, po wyszukiwaniu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Button_Click_4(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Sortowanie po PESELU
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Button_Click_5(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Okienko: Czy napewno chcesz wyjść ?
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.Button_Click_6(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Zapisywanie do bazy danych
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.SpisPodrozy.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:projekcik.MainWindow">
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:projekcik.MainWindow.lot">
+            <summary>
+            Deklaracja zmiennej lot z klasy Podroze
+            </summary>
+        </member>
+        <member name="M:projekcik.MainWindow.#ctor">
+            <summary>
+            Konstruktor nieparametryczny MainWindow inicjalizujący komponenty, przypisujący godzinę oraz datę w GUI, oraz zaznaczający pole z ubezpieczeniem
+            </summary>
+        </member>
+        <member name="M:projekcik.MainWindow.#ctor(projekt.Podroze)">
+            <summary>
+            Konstruktor parametryczny ustawiający wartość pola lot
+            </summary>
+            <param name="t">Podróż</param>
+        </member>
+        <member name="M:projekcik.MainWindow.btnWyjście_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda pozwalająca na wyjście z GUI
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.MainWindow.btnResetuj_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda pozwalająca na resetująca dane wprowadzone do formularza
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.MainWindow.Dane">
+            <summary>
+            Metoda umożliwiająca pobranie danych z formularza
+            </summary>
+        </member>
+        <member name="M:projekcik.MainWindow.SprawdzaniePoprawnosci">
+            <summary>
+            Metoda sprawdzająca poprawność wpisanych danych i wyrzucająca informacje o poprawie danych jeśli któraś z danych nie została wpisana poprawnie lub nie została wpisana wcale
+            </summary>
+            <returns>true jeśli dane zostały wprowadzone prawidłowo albo false jeśli zostały wprowadzone nieprawidłowo</returns>
+        </member>
+        <member name="M:projekcik.MainWindow.btnPodlicz_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda Podliczająca ceny
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.MainWindow.btnDrukuj_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda która wyświetla rachunek w GUI
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.MainWindow.DigitInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            Metoda pozwalająca na wpisanie tylko cyfr
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.MainWindow.LetterInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
+            <summary>
+            Metoda pozwalająca na wpisanie tylko liter 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.MainWindow.Dodaj(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Metoda dodająca podróże do listy z GUI głównego
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:projekcik.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:projekcik.Properties.Resources">
+            <summary>
+              Klasa zasobu wymagająca zdefiniowania typu do wyszukiwania zlokalizowanych ciągów itd.
+            </summary>
+        </member>
+        <member name="P:projekcik.Properties.Resources.ResourceManager">
+            <summary>
+            Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
+            </summary>
+        </member>
+        <member name="P:projekcik.Properties.Resources.Culture">
+            <summary>
+              Przesłania właściwość CurrentUICulture bieżącego wątku dla wszystkich
+              przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
+            </summary>
+        </member>
+    </members>
+</doc>

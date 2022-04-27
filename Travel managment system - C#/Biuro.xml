@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BiuroPodrozy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BiuroId>0</BiuroId>
+  <loty>
+    <Podroze>
+      <Telefon>456456456</Telefon>
+      <KodPocztowy>40-678</KodPocztowy>
+      <PESEL>01234567654</PESEL>
+      <Email>nowak@wp.pl</Email>
+      <Imie>Aneta</Imie>
+      <Nazwisko>Nowak</Nazwisko>
+      <Adres>ul. Długa 4</Adres>
+      <PodrozeId>0</PodrozeId>
+      <BiuroId>0</BiuroId>
+      <Sygnatura>SYG-00004</Sygnatura>
+      <SpecjalnePotrzeby>false</SpecjalnePotrzeby>
+      <Ubezpieczenie>true</Ubezpieczenie>
+      <DodatkowyBagaz>true</DodatkowyBagaz>
+      <PrzelecianeKilometry>false</PrzelecianeKilometry>
+      <Wylot>RębiechowoGdańsk</Wylot>
+      <Klasa>pierwszaKlasa</Klasa>
+      <Bilet>powrot</Bilet>
+      <IloscDzieci>3</IloscDzieci>
+      <CelPodrozy>Tunezja_Tunisie</CelPodrozy>
+      <Ilosc>2</Ilosc>
+    </Podroze>
+  </loty>
+  <Nazwa />
+</BiuroPodrozy>

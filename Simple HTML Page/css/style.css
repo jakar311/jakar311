@@ -1,0 +1,1246 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+header > * {
+  position: absolute;
+}
+
+body header {
+  position: relative;
+  background-color: #29a6dc;
+  font-family: 'Saira Condensed', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+header img {
+  bottom: 0;
+  right: 0;
+  height: 35%;
+
+}
+
+header h1 {
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+header h2 {
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+header button {
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: 'Saira', sans-serif;
+  color: white;
+  padding: 0 18px;
+  text-transform: uppercase;
+  line-height: 32px;
+  font-size: 12px;
+  margin-top: 30px;
+  transition: .4s;
+}
+
+header button:hover {
+  background-color: white;
+  color: #111;
+  cursor: pointer;
+}
+
+div.welcome {
+  top: 8%;
+  z-index: 2;
+  left: 5%;
+}
+
+section.opis {
+  font-family: 'saira condensed', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.opis {
+  margin: 10% 5%;
+}
+
+.opis h1 {
+  font-size: 24px;
+  width: 80%;
+  margin: 0 auto 80px;
+}
+
+
+div.opis img {
+  width: 200px;
+  height: 120px;
+}
+
+div.opis h1 ~ * {
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+}
+
+div.opis h2 {
+  font-size: 18px;
+  width: 80%;
+  margin: 20px auto 20px auto;
+}
+
+div.opis p {
+  font-family: 'saira', sans-serif;
+  font-size: 12px;
+  text-transform: none;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.duma {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'saira condensed', sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+}
+
+.duma img {
+  width: 100%;
+}
+
+.duma h1 {
+  padding: 6% 0;
+  text-align: center;
+}
+
+.duma h2 {
+  font-size: 18px;
+  font-family: 'saira', sans-serif;
+  font-weight: normal;
+  padding: 20px 20px 10px 20px;
+}
+
+.duma p {
+  font-size: 12px;
+  font-family: 'saira', sans-serif;
+  text-transform: none;
+  width: 80%;
+  padding: 20px;
+  border-top: 1px solid white;
+}
+
+.clearfix:nth-of-type(odd) {
+  background-color: #ff4f2c;
+  margin-bottom: 5%;
+}
+
+.clearfix:nth-of-type(even) {
+  background-color: #0170ba;
+  margin-bottom: 5%;
+}
+
+.clearfix:nth-of-type(4) {
+  background-color: #0170ba;
+  margin-bottom: 0;
+}
+
+
+
+section.motto {
+  max-width: 1920px;
+  margin: 0 auto;
+  color: white;
+  height: 400px;
+  background-image: url(../images/motto.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: 'saira condensed', sans-serif;
+}
+
+div.motto {
+  background-color: rgb(0, 63, 114, 0.5);
+  height: 100%;
+}
+
+.motto h1 {
+  text-align: center;
+  padding: 10% 0;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.motto p {
+  font-family: 'saira', sans-serif;
+  text-align: center;
+  line-height: 130%;
+}
+
+.motto p + p {
+  padding: 5% 5px;
+  font-size: 11px;
+}
+
+.free {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.free div:nth-of-type(1) {
+  background-image: url(../images/hobby1.jpg);
+}
+
+.free div:nth-of-type(2) {
+  background-image: url(../images/hobby2.jpg);
+}
+
+.free div:nth-of-type(3) {
+  background-image: url(../images/hobby3.jpg);
+}
+
+.free div:nth-of-type(4) {
+  background-image: url(../images/hobby4.jpg);
+}
+
+.free h1 {
+  font-size: 24px;
+  line-height: 15vh;
+  text-align: center;
+  margin: 0 15px;
+  font-family: 'saira condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.free div {
+  height: 30vh;
+  text-align: center;
+  font-family: 'saira', sans-serif;
+  color: white;
+  background-position: center;
+  background-size: 130%;
+  font-size: 20px;
+  background-repeat: no-repeat;
+}
+
+.free div p {
+  line-height: 5vh;
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 5px;
+}
+
+.quest input,
+.quest textarea,
+.quest button {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  padding: 10px;
+  opacity: .8
+}
+
+.form {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.quest input:nth-child(1) {
+  height: 30px;
+}
+
+.quest input:nth-child(2) {
+  height: 30px;
+}
+
+textarea {
+  font-family: 'saira', sans-serif;
+  height: 120px;
+  resize: none;
+}
+
+.quest button {
+  font-size: 14px;
+  font-family: 'saira', sans-serif;
+  color: white;
+  background-color: #111;
+  border: 2px solid white;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.contact {
+  background-color: #111;
+  color: white;
+  font-family: 'saira', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact h1 {
+  padding: 10%;
+  font-family: 'saira condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.links {
+  margin-top: 50px;
+}
+
+.links ul li {
+  list-style: none;
+  font-size: 12px;
+  margin: 20px 20px;
+  opacity: 0.8;
+}
+
+.links ul li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.links ul li div img {
+  list-style: none;
+  width: 36px;
+  float: left;
+}
+
+.links ul li a {
+  float: left;
+  padding-left: 20px;
+  text-decoration: none;
+  color: #bbb;
+  line-height: 36px;
+}
+
+footer {
+  line-height: 12vh;
+  text-align: center;
+  background-color: #29a9df;
+  font-family: 'saira', sans-serif;
+}
+
+@media(orientation:landscape) {
+  header img {
+    bottom: 0;
+    right: -5%;
+    height: 80%;
+  }
+
+  .welcome {
+    width: 50%;
+    left: 5%;
+  }
+
+  .opis h1 {
+    font-size: 27px;
+    width: 80%;
+    margin: 0 auto 60px;
+  }
+
+  div.opis h2 {
+    font-size: 22px;
+  }
+
+  div.opis p {
+    font-size: 15px;
+    margin: 0 auto 20px;
+  }
+
+  .motto h1 {
+    padding: 3% 0;
+  }
+
+  .motto p {
+    font-size: 13px;
+  }
+
+  .motto p + p {
+    padding: 5px;
+    font-size: 9px;
+  }
+
+  .free h1 {
+    margin: 30px 10px 20px 10px;
+    font-size: 26px;
+  }
+
+  .free div {
+    width: 50%;
+    float: left;
+  }
+
+  .free::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .free div p {
+    font-size: 16px;
+  }
+
+  .free div {
+    height: 40vh;
+  }
+
+  footer {
+    font-size: 16px;
+    line-height: 20vh;
+  }
+
+  section.motto {
+    height: 200px;
+  }
+
+}
+
+
+@media(orientation:landscape) and (min-width:640px) {
+
+  .motto h1 {
+    padding-bottom: 10PX;
+  }
+
+  .motto p {
+    padding: 0px 30px;
+    font-size: 14px;
+  }
+
+
+  footer {
+    line-height: 18vh;
+    font-size: 18px;
+  }
+
+  section.motto {
+    height: 300px;
+  }
+}
+
+@media(orientation:landscape) and (min-width:720px) {
+  header img {
+    bottom: 0;
+    right: -10%;
+    height: 80%;
+  }
+
+  .welcome {
+    width: 45%;
+    top: 30%;
+  }
+
+  .opis h1 {
+    font-size: 30px;
+  }
+
+  div.opis img {
+    width: 300px;
+    height: 180px;
+  }
+
+  div.opis h2 {
+    font-size: 25px;
+  }
+
+  div.opis p {
+    font-size: 18px;
+  }
+
+  .motto h1 {
+    padding: 3% 0;
+    font-size: 28px;
+  }
+
+  section.motto {
+    height: 350px;
+  }
+
+  .motto p {
+    padding: 10px 30px 0;
+    font-size: 18px;
+  }
+
+  .motto p + p {
+    font-size: 11px;
+  }
+
+  .free div {
+    background-size: cover;
+  }
+
+  .free div {
+    height: 45vh;
+  }
+
+
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+  header img {
+    right: -18%;
+    height: 90%;
+  }
+
+  .welcome {
+    width: 50%;
+    top: 25%;
+    left: 5%;
+  }
+
+  header h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+
+  header h2,
+  header p {
+    font-size: 45px;
+  }
+
+  header button {
+    line-height: 70px;
+    font-size: 25px;
+    margin-top: 90px;
+  }
+
+  div.opis {
+    margin: 5% 5%;
+  }
+
+  .opis h1 {
+    font-size: 35px;
+    margin: 0 auto 80px;
+  }
+
+  section.motto {
+    height: 400px;
+  }
+
+  div.opis img {
+    width: 270px;
+    height: 162px;
+  }
+
+  div.opis h1 ~ * {
+    width: 33.333%;
+    float: left;
+  }
+
+  div.opis h2 {
+    font-size: 25px;
+  }
+
+  div.opis p {
+    font-size: 19px;
+  }
+
+  .duma h2 {
+    font-size: 22px;
+    padding: 30px 0 30px 8%;
+  }
+
+
+  .duma h1 {
+    font-size: 35px;
+  }
+
+  .zdjecie2 {
+    width: 50%;
+    float: right;
+  }
+
+  .zdjecie1 {
+    width: 50%;
+    float: left;
+  }
+
+  .zdjecie1 img,
+  .zdjecie2 img {
+    display: block;
+  }
+
+  .clearfix:nth-of-type(odd) p {
+    box-sizing: border-box;
+    font-size: 15px;
+    width: 92%;
+    padding: 40px 0 30px 8%;
+  }
+
+  .clearfix:nth-of-type(even) p {
+    box-sizing: border-box;
+    font-size: 15px;
+    width: 92%;
+    margin-left: 8%;
+    padding: 40px 8% 30px 0;
+  }
+
+  .about1 {
+    float: left;
+    width: 50%;
+  }
+
+  .about2 {
+    float: left;
+    width: 50%;
+  }
+
+  .clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
+  .motto h1 {
+    font-size: 45px;
+  }
+
+  .motto p {
+    padding: 10px 150px 0;
+    font-size: 30px;
+  }
+
+  .motto p + p {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+
+  .free h1 {
+    font-size: 35px;
+  }
+
+
+  .free div p {
+    font-size: 28px;
+  }
+
+  .quest input,
+  .quest textarea,
+  .quest button {
+    width: 55%;
+    transition: .4s;
+  }
+
+  .form {
+    position: relative;
+  }
+
+  .quest {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 15px;
+  }
+
+  .quest input:nth-child(1) {
+    float: right;
+    height: 34px;
+  }
+
+  .quest input:nth-child(2) {
+    float: right;
+    height: 34px;
+  }
+
+  textarea {
+    float: right;
+    height: 130px;
+  }
+
+  .quest button {
+    font-size: 14px;
+    border: 2px solid white;
+    float: right;
+  }
+
+  .quest button:hover {
+    color: #111;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .contact {
+    padding-bottom: 20px;
+    height: 460px;
+  }
+
+  .contact h1 {
+    padding: 50px;
+    font-size: 35px;
+  }
+
+  .links {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 0;
+    padding-left: 15px;
+    position: absolute;
+    left: 50%;
+    top: -15px;
+  }
+
+  .links ul li a {
+    float: left;
+    display: block;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #bbb;
+    line-height: 36px;
+  }
+
+  .links ul li:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  footer {
+    font-size: 26px;
+    line-height: 12vh;
+  }
+}
+
+@media(orientation:landscape) and (min-width:1366px) {
+
+
+  header h1 {
+    font-size: 75px;
+  }
+
+  header h2,
+  header p {
+    font-size: 60px;
+  }
+
+  header button {
+    line-height: 80px;
+    font-size: 35px;
+  }
+
+  .opis h1 {
+    font-size: 45px;
+  }
+
+
+  div.opis img {
+    width: 375px;
+    height: 225px;
+  }
+
+  div.opis h2 {
+    font-size: 32px;
+  }
+
+  div.opis p {
+    font-size: 21px;
+  }
+
+  .duma h2 {
+    font-size: 32px;
+  }
+
+
+  .duma h1 {
+    font-size: 45px;
+  }
+
+  .clearfix:nth-of-type(odd) p {
+    font-size: 22px;
+  }
+
+  .clearfix:nth-of-type(even) p {
+    font-size: 22px;
+  }
+
+  .motto h1 {
+    font-size: 45px;
+  }
+
+  .motto p {
+    font-size: 38px;
+  }
+
+  .motto p + p {
+    font-size: 24px;
+  }
+
+  .quest input,
+  .quest textarea,
+  .quest button {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .quest {
+    padding-right: 25px;
+  }
+
+  .quest button {
+    font-size: 18px;
+  }
+
+  .quest input:nth-child(1) {
+    height: 44px;
+  }
+
+  .quest input:nth-child(2) {
+    height: 44px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  .contact h1 {
+    font-size: 45px;
+  }
+
+  .links {
+    padding-left: 25px;
+  }
+
+  .links ul li {
+    font-size: 17px;
+  }
+
+  .links ul li div img {
+    width: 50px;
+  }
+
+  .links ul li a {
+    line-height: 50px;
+  }
+
+  .contact {
+    height: 540px;
+  }
+
+}
+
+@media(orientation:landscape) and (min-width:1440px) {
+  header img {
+    height: 100%;
+    right: 0;
+  }
+
+  header h1 {
+    font-size: 120px;
+  }
+
+  header h2,
+  header p {
+    margin-bottom: -20px;
+  }
+
+  header button {
+    line-height: 88px;
+    font-size: 36px;
+  }
+
+  .welcome {
+    text-align: left;
+    left: 10%;
+    top: 20%
+  }
+
+  div.opis img {
+    width: 375px;
+    height: 225px;
+  }
+
+  .duma h2 {
+    font-size: 36px;
+  }
+
+
+  .duma h1 {
+    font-size: 50px;
+  }
+
+  .clearfix p {
+    font-size: 21px;
+  }
+
+  .clearfix {
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+
+  .motto h1 {
+    font-size: 60px;
+  }
+
+  .motto p {
+    padding: 10px 300px 0;
+    font-size: 32px;
+  }
+
+  .motto p + p {
+    font-size: 20px;
+  }
+
+  .opis h1 {
+    font-size: 60px;
+  }
+
+  .free div p {
+    font-size: 50px;
+    line-height: 45vh;
+    opacity: 0;
+    transition: 1s;
+    padding: 0;
+  }
+
+  .free div {
+    width: 50%;
+    transition: 1s;
+    background-size: 100%;
+  }
+
+  .free h1 {
+    font-size: 60px;
+  }
+
+  .free div:hover p {
+    opacity: 1;
+
+  }
+
+  .free div:hover {
+    background-size: 130%;
+  }
+
+  .quest input,
+  .quest textarea,
+  .quest button {
+    font-size: 24px;
+    margin-bottom: 40px;
+    width: 440px;
+    height: 64px;
+
+  }
+
+  .quest textarea {
+    height: 240px;
+  }
+
+  .quest {
+    padding-right: 50px;
+  }
+
+  .quest button {
+    font-size: 28px;
+    height: 72px;
+  }
+
+  .contact h1 {
+    font-size: 50px;
+  }
+
+  .contact {
+    height: 750px;
+  }
+
+  .links {
+    padding-left: 50px;
+  }
+
+  .links ul li {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+  }
+
+  .links ul li div img {
+    width: 64px;
+  }
+
+  .links ul li a {
+    line-height: 64px;
+  }
+
+  .form {
+    max-width: 1600px;
+
+  }
+
+  footer {
+    font-size: 26px;
+    line-height: 9vh;
+  }
+
+}
+
+@media(orientation:portrait) and (min-width:280px) {
+  div.welcome {
+    position: static;
+    margin-top: 10%;
+  }
+
+}
+
+@media(orientation:portrait) and (min-width:320px) {
+  header img {
+    right: -15%;
+    height: 50%;
+  }
+
+  div.welcome {
+    position: static;
+    margin-top: 10%;
+  }
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+
+  header h2,
+  header p {
+    font-size: 28px;
+  }
+
+  header button {
+    line-height: 40px;
+    font-size: 18px;
+    margin-top: 45px;
+  }
+
+  .opis h1 {
+    font-size: 28px;
+  }
+
+  div.opis h2 {
+    font-size: 22px;
+  }
+
+  div.opis p {
+    font-size: 16px;
+  }
+
+  .free h1 {
+    font-size: 28px;
+  }
+
+  .links ul li div img {
+    width: 40px;
+  }
+
+  .links ul li a {
+    line-height: 40px;
+  }
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+
+  header h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  header h2,
+  header p {
+    font-size: 40px;
+  }
+
+  header button {
+    line-height: 60px;
+    font-size: 23px;
+    margin-top: 90px;
+  }
+
+  .opis h1 {
+    font-size: 40px;
+  }
+
+  div.opis img {
+    width: 300px;
+    height: 180px;
+  }
+
+  div.opis h2 {
+    font-size: 28px;
+  }
+
+  div.opis p {
+    font-size: 22px;
+    margin: 0 auto 20px;
+  }
+
+  .duma h1 {
+    font-size: 40px;
+  }
+
+  .duma h2 {
+    font-size: 26px;
+    font-family: 'saira', sans-serif;
+    font-weight: normal;
+    padding: 20px 20px 10px 20px;
+  }
+
+  .duma p {
+    font-size: 22px;
+  }
+
+  .motto h1 {
+    font-size: 40px;
+  }
+
+  .motto p {
+    padding: 0 50px;
+    font-size: 30px;
+  }
+
+  .motto p + p {
+    font-size: 20px;
+  }
+
+  .free h1 {
+    font-size: 40px;
+  }
+
+  .free div {
+    width: 50%;
+    float: left;
+  }
+
+  .free::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .free div p {
+    font-size: 26px;
+  }
+
+  .links ul li div img {
+    width: 50px;
+  }
+
+  .links ul li a {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .links ul li {
+    padding-bottom: 10px;
+  }
+
+  .contact button,
+  .contact input,
+  .contact textarea {
+    font-size: 20px;
+  }
+
+  .contact h1 {
+    font-size: 40px;
+  }
+
+  footer {
+    font-size: 24px;
+  }
+}
+
+@media(orientation:portrait) and (min-width:1024px) {
+  header img {
+    height: 45%;
+    right: 0;
+  }
+
+  header h1 {
+    font-size: 80px;
+  }
+
+  header h2,
+  header p {
+    font-size: 65px;
+  }
+
+  header button {
+    line-height: 80px;
+    font-size: 30px;
+  }
+
+  .opis h1 {
+    font-size: 50px;
+  }
+
+  div.opis img {
+    width: 400px;
+    height: 240px;
+  }
+
+  div.opis h2 {
+    font-size: 35px;
+  }
+
+  div.opis p {
+    font-size: 26px;
+  }
+
+  .duma h1 {
+    font-size: 40px;
+  }
+
+  .duma h2 {
+    font-size: 32px;
+  }
+
+  .duma p {
+    font-size: 26px;
+  }
+
+  .motto h1 {
+    padding-bottom: 5%;
+    font-size: 50px;
+  }
+
+  .motto p {
+    font-size: 40px;
+  }
+
+  .motto p + p {
+    font-size: 22px;
+  }
+
+  .contact h1 {
+    font-size: 50px;
+  }
+
+  .links ul li div img {
+    width: 70px;
+  }
+
+  .links ul li a {
+    font-size: 28px;
+    line-height: 70px;
+  }
+
+  .contact button,
+  .contact input,
+  .contact textarea {
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 36px;
+  }
+}
