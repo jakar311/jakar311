@@ -1,0 +1,12 @@
+﻿  main.c
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(19,65): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(23,63): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(29,19): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(32,19): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(35,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(38,19): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(44,52): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(88,14): warning C4477: „scanf_s”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „float *”
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(111,56): warning C4244: "return": konwersja z "float" do "int", możliwa utrata danych
+C:\Users\werni\Desktop\Dieta\Dieta\main.c(61): warning C4716: "dane2": musi zwracać wartość
+  Dieta.vcxproj -> C:\Users\werni\Desktop\Dieta\Debug\Dieta.exe
