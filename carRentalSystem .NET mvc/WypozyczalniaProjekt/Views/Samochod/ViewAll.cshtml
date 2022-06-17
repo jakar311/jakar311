@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WypozyczalniaProjekt.Models.DbModels.Samochod>
+
+@{
+    ViewBag.Title = "Lista samochodów";
+}
+
+<h2 class="Title">Lista samochodów</h2>
+<div class="Wrapper">
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Lokalizacja.Adres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model.NazwaModelu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumerRejestracyjny)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Przebieg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vin)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Miasto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NazwaModelu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumerRejestracyjny)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Przebieg)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vin)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SamochodID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.SamochodID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SamochodID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>

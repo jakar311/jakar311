@@ -1,0 +1,34 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Marka
+
+@{
+    ViewBag.Title = "Dodawanie marki";
+}
+
+<h2 class="addTitle">Dodawanie marki</h2>
+<div class="ModelAddWrapper">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="addForm">
+            @Html.ValidationSummary(true, "")
+            <div class="form">
+                @Html.DisplayName("Nazwa marki")
+                <div>
+                    @Html.EditorFor(model => model.NazwaMarki)
+                    @Html.ValidationMessageFor(model => model.NazwaMarki, "")
+                </div>
+            </div>
+
+            <div class="form">
+                <div>
+                    <input type="submit" value="Create" class="editButton" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="back">
+        @Html.ActionLink("Powrót", "ViewAll")
+    </div>
+    </div>

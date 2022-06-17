@@ -1,0 +1,43 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Model
+
+@{
+    ViewBag.Title = "Dodawanie pojazdu";
+}
+
+<h2 class="addTitle">Dodawanie pojazdu</h2>
+
+<div class="ModelAddWrapper">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="addForm">
+            @Html.ValidationSummary(true, "")
+            <div class="form">
+                @Html.DisplayName("Model")
+                <div class="">
+                    @Html.EditorFor(model => model.NazwaModelu)
+                    @Html.ValidationMessageFor(model => model.NazwaModelu)
+                </div>
+            </div>
+
+            <div class="form">
+                @Html.DisplayName("Marka")
+                <div class="">
+                    @Html.DropDownList("MarkaID")
+                    @Html.ValidationMessageFor(model => model.MarkaID)
+                </div>
+            </div>
+
+            <div class="">
+                <div class="addButton">
+                    <input type="submit" value="Dodaj" class="editButton" />
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="back">
+        @Html.ActionLink("Powrót", "ViewAll")
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - moja aplikacja platformy ASP.NET</title>
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Style/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="leftNavbar">
+        <div class="logo"></div>
+        <ul class="">
+            <li>@Html.ActionLink("Strona główna", "Index", "Home")</li>
+            <li>@Html.ActionLink("Wynajem", "ViewAll", "Wynajem")</li>
+            <li>@Html.ActionLink("Rezerwacje", "ViewAll", "Rezerwacja")</li>
+            <li>@Html.ActionLink("Informacje", "About", "Home")</li>
+            <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
+            <li><a href="~/Content/WypozyczalniaProjekt.xml">Dokumentacja</a></li>
+        </ul>
+        <div class="clockContainer">
+            <p id="clock"></p>
+        </div>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - BestCARS sp. z o.o.</p>
+        </footer>
+    </div>
+    <div class="bodyContainer">
+        <nav class="topNavbar">
+            <ul>
+                <li>@Html.ActionLink("Marki", "ViewAll", "Marka")</li>
+                <li>@Html.ActionLink("Modele", "ViewAll", "Model")</li>
+                <li>@Html.ActionLink("Samochody", "ViewAll", "Samochod")</li>
+                <li>@Html.ActionLink("Klienci", "ViewAll", "Klient")</li>
+                <li>@Html.ActionLink("Lokalizacje", "ViewAll", "Lokalizacja")</li>
+                <li>@Html.ActionLink("Pracownicy", "ViewAll", "Pracownik")</li>
+            </ul>
+            <ul>
+                <li>@Html.Partial("_LoginPartial")</li>
+            </ul>
+        </nav>
+        @RenderBody()
+
+    </div>
+
+    <script src="~/Content/script.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,666 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WypozyczalniaProjekt</name>
+    </assembly>
+    <members>
+        <member name="T:WypozyczalniaProjekt.Controllers.KlientController">
+            <summary>
+            Kontroler klienta zawierający metody Create, Edit, ViewAll, Details oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.KlientController.ViewAll">
+            <summary>
+            Metoda ViewAll wyświetlająca informacje o wszystkich klientach
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.KlientController.Details(System.Int32)">
+            <summary>
+            Metoda Details wyświetlająca szczegóły danych o kliencie
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.KlientController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych klienta
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.KlientController.Edit(WypozyczalniaProjekt.Models.DbModels.Klient)">
+            <summary>
+            Metoda Edit typu POST pozwalająca na żądająca przyjęcia zedytowanych danych o kliencie
+            </summary>
+            /// <param name="Klient klientklient"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.KlientController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o kliencie
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.KlientController.DeleteConfirm(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETEConfirm usuwająca dane o kliencie
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Controllers.LokalizacjaController">
+            <summary>
+            Kontroler lokalizacji zawierający metody Create, Edit, ViewAll, Details oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.LokalizacjaController.ViewAll">
+            <summary>
+            Metoda ViewaLl wyświetlająca informacje o wszystkich lokalizacjach
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.LokalizacjaController.Details(System.Int32)">
+            <summary>
+            Metoda Details wyświetlająca szczegóły danych o lokalizacji
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.LokalizacjaController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych lokalizacji
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.LokalizacjaController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o lokalizacji
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.LokalizacjaController.DeleteConfirm(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETEConfirm usuwająca dane o lokalizacji
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Controllers.MarkaController">
+            <summary>
+            Kontroler Marki auta zawierający metody Create, Edit, ViewAll, Details oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.MarkaController.ViewAll">
+            <summary>
+            Metoda ViewAll wyświetlająca informacje o wszystkich markach
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.MarkaController.Details(System.Int32)">
+            <summary>
+            Metoda Details wyświetlająca szczegóły danych o marce
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.MarkaController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych marki
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.MarkaController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o marce
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.MarkaController.DeleteConfirm(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETEConfirm usuwająca dane o marce
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Controllers.ModelController">
+            <summary>
+            Kontroler Modelu auta zawierający metody Create, Edit, ViewAll, Details oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.ModelController.Create">
+            <summary>
+            Metoda Create typu GET żądająca pobrania informacji o modelu
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.ModelController.ViewAll">
+            <summary>
+            Metoda ViewAll wyświetlająca informacje o wszystkich modelach
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.ModelController.Details(System.Int32)">
+            <summary>
+            Metoda Details wyświetlająca szczegóły danych o modelu
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.ModelController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych modelu
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.ModelController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o modelu
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Controllers.PracownikController">
+            <summary>
+            Kontroler pracownika zawierający metody Create, Edit, ViewAll, Details oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.PracownikController.ViewAll">
+            <summary>
+            Metoda ViewAll wyświetlająca informacje o wszystkich pracownikach
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.PracownikController.Details(System.Int32)">
+            <summary>
+            Metoda Details wyświetlająca szczegóły danych o kliencie
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.PracownikController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych pracownika
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.PracownikController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o pracowniku
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.PracownikController.DeleteConfirm(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETEConfirm usuwająca dane o pracowniku
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Controllers.RezerwacjaController">
+            <summary>
+            Kontroler rezerwacji zawierający metody Create, Edit, ViewAll oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.RezerwacjaController.ViewAll">
+            /// <summary>
+            Metoda ViewAll wyświetlająca informacje o wszystkich rezerwacjach
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.RezerwacjaController.Create">
+            <summary>
+            Metoda Create typu GET żądająca pobrania informacji o rezerwacji
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.RezerwacjaController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych rezerwacji
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.RezerwacjaController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o rezerwacji
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Controllers.SamochodController">
+            <summary>
+            Kontroler Samochodu zawierający metody Create, Edit, ViewAll oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.SamochodController.ViewAll">
+            <summary>
+            Metoda ViewAll wyświetlająca informacje o wszystkich samochodach
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.SamochodController.Create">
+            <summary>
+            Metoda Create typu GET żądająca pobrania informacji o samochodzie
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.SamochodController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych samochodu
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.SamochodController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o samochodzie
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.SamochodController.DeleteConfirm(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETEConfirm usuwająca dane o samochodzie
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Controllers.WynajemController">
+            <summary>
+            Kontroler Wynajmu auta zawierający metody Create, Edit, ViewAll, Details oraz Delete
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.WynajemController.ViewAll">
+            <summary>
+            Metoda ViewAll wyświetlająca informacje o wszystkich wynajmach samochodów
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.WynajemController.Create">
+            <summary>
+            Metoda Create typu GET żądająca pobrania informacji o wynajmie
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.WynajemController.Edit(System.Int32)">
+            <summary>
+            Metoda Edit typu GET pozwalająca na wyświetlenie możliwości edycjy danych wynajmu
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Controllers.WynajemController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Metoda DELETE wyświetlająca możliwość usunięcia danych o wynajmie
+            </summary>
+            /// <param name="id"></param>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Klient">
+            <summary>
+            Klasa zawierajaca dane dotyczące klienta
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Klient.KlientID">
+            <summary>
+            ID klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Klient.ID">
+            <summary>
+            statyczna zmienna ID
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Klient.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, przypisujący wartość pola KlientID
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Klient.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Konstruktor parametryczny ; nadaje imie, nazwisko, adres,telefon oraz identyfikator
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Lokalizacja">
+            <summary>
+            Klasa zawierajaca dane dotyczące lokalizacji wypożyczalni
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Lokalizacja.LokalizacjaID">
+            <summary>
+            ID lokalizacji wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Lokalizacja.Rezerwacje">
+            <summary>
+            Zmodyfikowane pole rezerwacje, które jest listą oraz deklaracja nowej listy
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Lokalizacja.#ctor">
+            <summary>
+            Konstruktor nieparametryczny
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Lokalizacja.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Konstruktor parametryczny ; nadaje adres, miasto, województwo oraz identyfikator
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Marka">
+            <summary>
+            Klasa zawierajaca marki aut w wypożyczalni
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Marka.MarkaID">
+            <summary>
+            ID marki wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Marka.ID">
+            <summary>
+            Statyczna zmienna ID i przypisana do niej wartość 0
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Marka.Models">
+            <summary>
+            Zmodyfikowane pole models wraz hermetyzacją, które jest listą oraz deklaracja nowej listy
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Marka.#ctor">
+            <summary>
+            Konstruktor nieparametryczny
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Marka.#ctor(System.String)">
+            <summary>
+            Konstruktor parametryczny ; nadaje nazwę marki oraz identyfikator
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Model">
+            <summary>
+            Klasa zawierajaca modele aut w wypożyczalni
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Model.ModelID">
+            <summary>
+            ID modelu wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Model.ID">
+            <summary>
+            Statyczna zmienna ID i przypisana do niej wartość 0
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Model.#ctor">
+            <summary>
+            Konstruktor nieparametryczny
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Model.#ctor(System.String)">
+            <summary>
+            Konstruktor parametryczny ; nadaje nazwę modelu oraz identyfikator
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Model.MarkaID">
+            <summary>
+            ID marki wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Model.NazwaMarki">
+            <summary>
+            Nazwa marki wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Model.Marka">
+            <summary>
+            virtualny obiekt Marka wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Pracownik">
+            <summary>
+            Klasa zawierajaca dane dotyczące pracownika
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Pracownik.PracownikID">
+            <summary>
+            ID pracownika wraz z hermetyzacją
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:WypozyczalniaProjekt.Models.DbModels.Pracownik.Pensja" -->
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Pracownik.ID">
+            <summary>
+            statyczna zmienna ID z przypisaną wartością 0
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Pracownik.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, przypisujący wartość pola PracownikID
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Pracownik.#ctor(System.String,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Konstruktor parametryczny ; nadaje imie, nazwisko, adres,telefon, pensje, stanowisko oraz identyfikator pracownika
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Rezerwacja">
+            <summary>
+            Klasa zawierajaca rezerwacje aut w wypożyczalni
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.RezerwacjaID">
+            <summary>
+            ID rezerwacji wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.NumerRezerwacji">
+            <summary>
+            numer rezerwacji wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.ID">
+            <summary>
+            statyczna zmienna ID
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, przypisujący wartość pola RezerwacjaID oraz przypisujący numer rezerwacji
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.#ctor(System.DateTime,System.DateTime)">
+            <summary>
+            Konstruktor parametryczny ; nadaje daty rezerwacji oraz identyfikator
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.Wynajem">
+            <summary>
+            virtualny obiekt wynajem wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.LokalizacjaID">
+            <summary>
+            Identyfikator lokalizacji wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.Miasto">
+            <summary>
+            Miasto wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.Lokalizacja">
+            <summary>
+            virtualny obiekt lokalizacja wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.KlientID">
+            <summary>
+            ID klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.NazwiskoKlienta">
+            <summary>
+            Nazwisko klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.ImieKlienta">
+            <summary>
+            Imie klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.Klient">
+            <summary>
+            virtualny obiekt klient wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.ModelID">
+            <summary>
+            Identyfikator Klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.NazwaModelu">
+            <summary>
+            Nazwa modelu wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Rezerwacja.Model">
+            <summary>
+            virtualny obiekt model wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Samochod">
+            <summary>
+            Klasa zawierajacainformacje o autach w wypożyczalni
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.SamochodID">
+            <summary>
+            ID auta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.Przebieg">
+            <summary>
+            Aktualny przebieg auta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Samochod.ID">
+            <summary>
+            Statyczna zmienna ID i przypisana do niej wartość 0
+            </summary>
+        </member>
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Samochod.random">
+            <summary>
+            Wywołanie klasy random do gerowania numeru rejestracyjnego
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Samochod.RandomString(System.Int32)">
+            <summary>
+            Metoda RandomString genreująca numer rejestracyjny
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Samochod.#ctor">
+            <summary>
+            Konstruktor nieparametryczny, przypisujący wartość pola SamochodID
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Samochod.#ctor(System.Int32,System.String)">
+            <summary>
+            Konstruktor parametryczny ; nadaje numer rejestracyjny, przebieg, VIN oraz identyfikator
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.ModelID">
+            <summary>
+            Identyfikator Klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.Model">
+            <summary>
+            virtualny obiekt model wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.NazwaModelu">
+            <summary>
+            Nazwa modelu wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.LokalizacjaID">
+            <summary>
+            Identyfikator lokalizacji wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.Miasto">
+            <summary>
+            Miasto wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.Lokalizacja">
+            <summary>
+            virtualny obiekt lokalizacja wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Samochod.WynajmowaneAuta">
+            <summary>
+            virtualny Interfejs wynajmowane auta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.Wynajem">
+            <summary>
+            Klasa zawierajaca informacje o wynajęciu aut z wypożyczalni
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.WynajemID">
+            <summary>
+            ID wynajmu wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.Koszt">
+            <summary>
+            koszt wynajmu wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="F:WypozyczalniaProjekt.Models.DbModels.Wynajem.ID">
+            <summary>
+            statyczna zmienna ID
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.RezerwacjaID">
+            <summary>
+            ID rezerwacji wraz z hermetyzacją; może przyjąć wartość null
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Wynajem.#ctor">
+            <summary>
+            Konstruktor nieparametryczny
+            </summary>
+        </member>
+        <member name="M:WypozyczalniaProjekt.Models.DbModels.Wynajem.#ctor(System.Single,System.DateTime,System.DateTime)">
+            <summary>
+            Konstruktor parametryczny ; nadaje daty wynajmu, koszt  oraz identyfikator
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.KlientID">
+            <summary>
+            ID klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.Klient">
+            <summary>
+            virtualny obiekt klient wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.NazwiskoKlienta">
+            <summary>
+            Nazwisko klienta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.PracownikID">
+            <summary>
+            ID pracownika wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.NazwiskoPracownika">
+            <summary>
+            Nazwisko pracownikawraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.Pracownik">
+            <summary>
+            virtualny obiekt pracownik wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.Wynajem.WynajmowaneAuta">
+            <summary>
+            virtualny Interfejs wynajmowane auta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="T:WypozyczalniaProjekt.Models.DbModels.WynajmowaneAuto">
+            <summary>
+            Klasa zawierajaca informacje o wynajętym aucie
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.WynajmowaneAuto.SamochodID">
+            <summary>
+            ID wynajętego auta wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.WynajmowaneAuto.Samochod">
+            <summary>
+            virtualny obiekt samochódt wraz z hermetyzacją
+            </summary>
+        </member>
+        <member name="P:WypozyczalniaProjekt.Models.DbModels.WynajmowaneAuto.Wynajem">
+            <summary>
+            virtualny obiekt wynajem wraz z hermetyzacją
+            </summary>
+        </member>
+    </members>
+</doc>

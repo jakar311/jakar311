@@ -1,0 +1,59 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Klient
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2 class="addTitle">Edycja klienta</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="addForm">
+        @Html.ValidationSummary(true, "")
+        @Html.HiddenFor(model => model.KlientID)
+
+        <div class="form">
+            @Html.LabelFor(model => model.ImieKlienta)
+            <div>
+                @Html.EditorFor(model => model.ImieKlienta)
+                @Html.ValidationMessageFor(model => model.ImieKlienta)
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.NazwiskoKlienta)
+            <div>
+                @Html.EditorFor(model => model.NazwiskoKlienta)
+                @Html.ValidationMessageFor(model => model.NazwiskoKlienta)
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.AdresZamieszkaniaKlienta)
+            <div>
+                @Html.EditorFor(model => model.AdresZamieszkaniaKlienta)
+                @Html.ValidationMessageFor(model => model.AdresZamieszkaniaKlienta)
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.NrTelefonuKlienta)
+            <div>
+                @Html.EditorFor(model => model.NrTelefonuKlienta)
+                @Html.ValidationMessageFor(model => model.NrTelefonuKlienta)
+            </div>
+        </div>
+
+        <div class="form">
+            <div>
+                <input type="submit" value="Save" class="editButton" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="back">
+    @Html.ActionLink("Powrót", "ViewAll")
+</div>

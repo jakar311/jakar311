@@ -1,0 +1,51 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Model
+
+@{
+    ViewBag.Title = "Edycja pojazdu";
+}
+
+<h2 class="addTitle">Edycja pojazdu</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div  class="addForm">
+        @Html.ValidationSummary(true, "")
+        @Html.HiddenFor(model => model.ModelID)
+
+        <div class="form">
+            @Html.LabelFor(model => model.NazwaModelu)
+            <div>
+                @Html.EditorFor(model => model.NazwaModelu)
+                @Html.ValidationMessageFor(model => model.NazwaModelu, "")
+            </div>
+        </div>
+
+        <div class="formHidden">
+            @Html.LabelFor(model => model.MarkaID, "MarkaID")
+            <div>
+                @Html.DropDownList("MarkaID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.NazwaMarki, "")
+            </div>
+        </div>
+
+        <div class="formHidden">
+            @Html.LabelFor(model => model.NazwaMarki)
+            <div>
+                @Html.EditorFor(model => model.NazwaMarki)
+                @Html.ValidationMessageFor(model => model.NazwaMarki, "")
+            </div>
+        </div>
+
+        <div  class="form">
+            <div>
+                <input type="submit" value="Save" class="editButton" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="back">
+    @Html.ActionLink("Powrót", "Viewall")
+</div>

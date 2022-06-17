@@ -1,0 +1,51 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Lokalizacja
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2 class="addTitle">Edycja lokalizacji</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="addForm">
+        @Html.ValidationSummary(true, "")
+        @Html.HiddenFor(model => model.LokalizacjaID)
+
+        <div class="form">
+            @Html.LabelFor(model => model.Adres)
+            <div>
+                @Html.EditorFor(model => model.Adres)
+                @Html.ValidationMessageFor(model => model.Adres, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.Miasto)
+            <div>
+                @Html.EditorFor(model => model.Miasto)
+                @Html.ValidationMessageFor(model => model.Miasto, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.Wojewodztwo)
+            <div>
+                @Html.EditorFor(model => model.Wojewodztwo)
+                @Html.ValidationMessageFor(model => model.Wojewodztwo, "")
+            </div>
+        </div>
+
+        <div class="form">
+            <div>
+                <input type="submit" value="Save" class="editButton" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="back">
+    @Html.ActionLink("Powrót", "ViewAll")
+</div>

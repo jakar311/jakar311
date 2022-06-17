@@ -1,0 +1,70 @@
+﻿@model IEnumerable<WypozyczalniaProjekt.Models.DbModels.Wynajem>
+
+@{
+    ViewBag.Title = "Lista wynajmów";
+}
+
+<h2 class="Title">Lista wynajmów</h2>
+<div class="Wrapper">
+    <p>
+        @Html.ActionLink("Dodaj wynajem", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NazwiskoKlienta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NazwiskoPracownika)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rezerwacja.Miasto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Koszt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WynajemOd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WynajemDo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RezerwacjaID)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NazwiskoKlienta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NazwiskoPracownika)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rezerwacja.Miasto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Koszt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WynajemOd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WynajemDo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RezerwacjaID)
+                </td>
+                <td>
+                    @Html.ActionLink("Edytuj", "Edit", new { id = item.WynajemID }) |
+                    @Html.ActionLink("Usuń", "Delete", new { id = item.WynajemID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>

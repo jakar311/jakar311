@@ -1,0 +1,75 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Pracownik
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2 class="addTitle">Edycja pracownika</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="addForm">
+        @Html.ValidationSummary(true, "")
+        @Html.HiddenFor(model => model.PracownikID)
+
+        <div class="form">
+            @Html.LabelFor(model => model.ImiePracownika)
+            <div>
+                @Html.EditorFor(model => model.ImiePracownika)
+                @Html.ValidationMessageFor(model => model.ImiePracownika, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.NazwiskoPracownika)
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NazwiskoPracownika)
+                @Html.ValidationMessageFor(model => model.NazwiskoPracownika, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.AdresZamieszkaniaPracownika)
+            <div>
+                @Html.EditorFor(model => model.AdresZamieszkaniaPracownika)
+                @Html.ValidationMessageFor(model => model.AdresZamieszkaniaPracownika, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.Pensja)
+            <div>
+                @Html.EditorFor(model => model.Pensja)
+                @Html.ValidationMessageFor(model => model.Pensja, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.NrTelefonuPracownika)
+            <div>
+                @Html.EditorFor(model => model.NrTelefonuPracownika)
+                @Html.ValidationMessageFor(model => model.NrTelefonuPracownika, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.Stanowisko)
+            <div>
+                @Html.EditorFor(model => model.Stanowisko)
+                @Html.ValidationMessageFor(model => model.Stanowisko, "")
+            </div>
+        </div>
+
+        <div class="">
+            <div class="">
+                <input type="submit" value="Zapisz" class="editButton" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="back">
+    @Html.ActionLink("Powrót", "ViewAll")
+</div>

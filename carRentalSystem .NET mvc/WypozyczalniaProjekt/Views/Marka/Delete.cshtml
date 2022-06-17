@@ -1,0 +1,30 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Marka
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 class="addTitle">Usuń marke</h2>
+
+<h3 class="sureDelete">Czy napewno chcesz usunąć?</h3>
+<div class="deleteForm">
+    <dl>
+        <dt>
+            @Html.DisplayName("Marka")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazwaMarki)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="backDel">
+            <input type="submit" value="Usuń" /> 
+            @Html.ActionLink("Powrót", "ViewAll")
+        </div>
+    }
+</div>

@@ -1,0 +1,70 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Pracownik
+
+@{
+    ViewBag.Title = "Usuń";
+}
+
+<h2 class="addTitle">Usuń pracownika</h2>
+
+<h3 class="sureDelete">Czy napewno chcesz usunąć?</h3>
+<div class="deleteForm">
+    <dl>
+        <dt>
+            @Html.DisplayName("Imię")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImiePracownika)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Nazwisko")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazwiskoPracownika)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Adres")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresZamieszkaniaPracownika)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Pensja")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pensja)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Telefon")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NrTelefonuPracownika)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Stanowisko")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stanowisko)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="backDel">
+            <input type="submit" value="Usuń" class="" /> 
+            @Html.ActionLink("Powrót", "ViewAll")
+        </div>
+    }
+</div>

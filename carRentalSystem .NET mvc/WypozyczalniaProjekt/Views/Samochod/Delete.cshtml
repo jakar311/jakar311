@@ -1,0 +1,63 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Samochod
+
+@{
+    ViewBag.Title = "Usuń samochod";
+}
+
+<h2 class="addTitle">Usuń samochod</h2>
+
+<h3 class="sureDelete">Czy napewno chcesz usunąć?</h3>
+<div class="deleteForm">
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Lokalizacja.Adres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Miasto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model.NazwaModelu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazwaModelu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumerRejestracyjny)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumerRejestracyjny)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Przebieg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Przebieg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vin)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="backDel">
+            <input type="submit" value="Usuń" /> 
+            @Html.ActionLink("Powrót", "ViewAll")
+        </div>
+    }
+</div>

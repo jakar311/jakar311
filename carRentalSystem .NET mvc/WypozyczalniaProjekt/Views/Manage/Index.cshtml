@@ -1,0 +1,26 @@
+﻿@model WypozyczalniaProjekt.Models.IndexViewModel
+@{
+    ViewBag.Title = "Zarządzanie kontem";
+}
+
+<h2 class="addTitle">@ViewBag.Title</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <dl class="menPas">
+        <dt>Hasło:</dt>
+        <dd>
+            [
+            @if (Model.HasPassword)
+            {
+                @Html.ActionLink("Zmień hasło", "ChangePassword")
+            }
+            else
+            {
+                @Html.ActionLink("Utwórz", "SetPassword")
+            }
+            ]
+        </dd>
+   
+    </dl>
+</div>

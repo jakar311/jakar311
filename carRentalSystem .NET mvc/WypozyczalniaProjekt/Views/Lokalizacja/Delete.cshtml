@@ -1,0 +1,46 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Lokalizacja
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 class="addTitle">Usuń lokalizacje</h2>
+
+<h3 class="sureDelete">Czy napewno chcesz usunąć?</h3>
+<div class="deleteForm">
+    <dl>
+        <dt>
+            @Html.DisplayName("Adres")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adres)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Miasto")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Miasto)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Województwo")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wojewodztwo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="backDel">
+            <input type="submit" value="Usuń" class="btn btn-default" /> 
+            @Html.ActionLink("Powrót", "ViewAll")
+        </div>
+    }
+</div>

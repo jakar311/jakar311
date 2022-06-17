@@ -1,0 +1,37 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Model
+
+@{
+    ViewBag.Title = "Usuń model";
+}
+
+<h2 class="addTitle">Usuń model</h2>
+
+<h3 class ="sureDelete">Czy napewno chcesz usunąć?</h3>
+    <div  class="deleteForm">
+        <dl>
+            <dt>
+                @Html.DisplayName("Marka")
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NazwaMarki)
+            </dd>
+            <dt>
+                @Html.DisplayName("Model")
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NazwaModelu)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div  class="backDel">
+                <input type="submit" value="Delete" /> 
+                @Html.ActionLink("Powrót", "ViewAll")
+            </div>
+        }
+    </div>

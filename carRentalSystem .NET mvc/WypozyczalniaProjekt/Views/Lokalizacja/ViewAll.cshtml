@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WypozyczalniaProjekt.Models.DbModels.Lokalizacja>
+
+@{
+    ViewBag.Title = "ViewAll";
+}
+
+<h2 class="Title">Lokalizacje</h2>
+<div class="Wrapper">
+    <p>
+        @Html.ActionLink("Dodaj lokalizacje", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Adres")
+            </th>
+            <th>
+                @Html.DisplayName("Miasto")
+            </th>
+            <th>
+                @Html.DisplayName("Województwo")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Miasto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Wojewodztwo)
+                </td>
+                <td>
+                    @Html.ActionLink("Edytuj", "Edit", new { id = item.LokalizacjaID }) |
+                    @Html.ActionLink("Usuń", "Delete", new { id = item.LokalizacjaID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>

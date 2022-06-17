@@ -1,0 +1,65 @@
+﻿@model IEnumerable<WypozyczalniaProjekt.Models.DbModels.Pracownik>
+
+@{
+    ViewBag.Title = "ViewAll";
+}
+
+<h2 class="Title">Pracownicy</h2>
+<div class="Wrapper">
+    <p>
+        @Html.ActionLink("Dodaj pracownika", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Imię")
+            </th>
+            <th>
+                @Html.DisplayName("Nazwisko")
+            </th>
+            <th>
+                @Html.DisplayName("Adres")
+            </th>
+            <th>
+                @Html.DisplayName("Pensja")
+            </th>
+            <th>
+                @Html.DisplayName("Telefon")
+            </th>
+            <th>
+                @Html.DisplayName("Stanowisko")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImiePracownika)
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NazwiskoPracownika)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdresZamieszkaniaPracownika)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pensja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrTelefonuPracownika)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Stanowisko)
+                </td>
+                <td>
+                    @Html.ActionLink("Edytuj", "Edit", new { id = item.PracownikID }) |
+                    @Html.ActionLink("Usuń", "Delete", new { id = item.PracownikID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>

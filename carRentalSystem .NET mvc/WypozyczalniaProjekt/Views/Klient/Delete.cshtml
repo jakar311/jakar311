@@ -1,0 +1,54 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Klient
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 class="addTitle">Usuń klienta</h2>
+
+<h3 class="sureDelete">Czy napewno chcesz usunąć?</h3>
+<div class="deleteForm">
+    <dl>
+        <dt>
+            @Html.DisplayName("Imię")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImieKlienta)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Nazwisko")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazwiskoKlienta)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Adres")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdresZamieszkaniaKlienta)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Telefon")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NrTelefonuKlienta)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="backDel">
+            <input type="submit" value="Usuń" class="btn btn-default" /> 
+            @Html.ActionLink("Powrót", "ViewAll")
+        </div>
+    }
+</div>

@@ -1,0 +1,35 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Marka
+
+@{
+    ViewBag.Title = "Edycja";
+}
+
+<h2 class="addTitle">Edycja marki</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="addForm">
+        @Html.ValidationSummary(true, "")
+        @Html.HiddenFor(model => model.MarkaID)
+
+        <div class="form">
+            @Html.LabelFor(model => model.NazwaMarki)
+            <div>
+                @Html.EditorFor(model => model.NazwaMarki)
+                @Html.ValidationMessageFor(model => model.NazwaMarki, "")
+            </div>
+        </div>
+
+        <div class="form">
+            <div>
+                <input type="submit" value="Save" class="editButton" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="back">
+    @Html.ActionLink("Powrót", "ViewAll")
+</div>

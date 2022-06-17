@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WypozyczalniaProjekt.Models.DbModels.Klient>
+
+@{
+    ViewBag.Title = "ViewAll";
+}
+
+<h2 class="Title">Klienci</h2>
+<div class="Wrapper">
+    <p>
+        @Html.ActionLink("Dodaj klienta", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayName("Imię")
+            </th>
+            <th>
+                @Html.DisplayName("Nazwisko")
+            </th>
+            <th>
+                @Html.DisplayName("Adres")
+            </th>
+            <th>
+                @Html.DisplayName("Telefon")
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImieKlienta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NazwiskoKlienta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AdresZamieszkaniaKlienta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NrTelefonuKlienta)
+                </td>
+                <td>
+                    @Html.ActionLink("Edytuj", "Edit", new { id = item.KlientID }) |
+                    @Html.ActionLink("Usuń", "Delete", new { id = item.KlientID })
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>

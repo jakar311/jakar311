@@ -1,0 +1,608 @@
+﻿* {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+/*NAVBARY*/
+body {
+	min-height: 100vh;
+	width: 100%;
+}
+
+.leftNavbar {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 17%;
+	height: 100vh;
+	background-color: darkorange;
+	text-align: center;
+}
+
+.logo {
+	height: 120px;
+	width: 200px;
+	margin: 50px auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../Content/Images/logo.png');
+}
+
+.leftNavbar ul li:hover {
+	background-color: orange;
+}
+
+.leftNavbar ul li {
+	position: relative;
+	transition: background .5s;
+	cursor: pointer;
+	line-height: 60px;
+	height: 60px;
+	border-top: 2px black solid;
+	width: 100%;
+	list-style: none;
+}
+
+.leftNavbar ul li a {
+	position: absolute;
+	font-size: 1.3rem;
+	left: 0;
+	width: 100%;
+}
+
+.leftNavbar a {
+	color: black;
+	text-decoration: none;
+}
+
+.leftNavbar ul li:nth-last-of-type(1) {
+	border-bottom: 2px black solid;
+}
+
+.clockContainer {
+	position: absolute;
+	bottom: 7%;
+	width: 100%;
+}
+
+.clockContainer p {
+	font-size: 1.2rem;
+}
+
+footer {
+	position: absolute;
+	bottom: 2%;
+	width: 100%;
+}
+
+.bodyContainer {
+	position: relative;
+	left: 17%;
+	width: 83%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+.bodyContainer > h2:nth-last-of-type(1) {
+	margin-top: 180px;
+}
+
+.infoTitle {
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 2rem;
+}
+
+.topNavbar {
+	z-index: 100;
+	position: fixed;
+	height: 150px;
+	display: flex;
+	width: 83%;
+	flex-basis: 150px;
+	background-color: black;
+	justify-content: space-between;
+	padding: 0 70px;
+	align-items: center;
+}
+
+.topNavbar ul {
+	justify-content: space-between;
+	list-style: none;
+	display: flex;
+	width: 60%;
+}
+
+.topNavbar > ul:nth-of-type(2) {
+	width: 25%;
+}
+
+.topNavbar > ul:nth-of-type(2) a {
+	margin-left: 40px;
+}
+
+.topNavbar ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.4rem;
+	transition: .5s;
+}
+
+.topNavbar ul li a:hover {
+	color: darkorange;
+}
+
+/*INFORMACJE*/
+.infoWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+}
+
+.infoContainer:nth-child(1),
+.infoContainer:nth-child(2) {
+	min-height: 200px;
+}
+
+.infoContainer {
+	position: relative;
+	flex-basis: 50%;
+	min-height: 440px;
+	padding: 20px;
+}
+
+.infoContainer h1 {
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.infoContainer p {
+	line-height: 1.5;
+}
+
+.infoContainer ul {
+	margin-bottom: 50px;
+}
+
+.ImageAbout {
+	border-radius: 30px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	height: 400px;
+	width: 80%;
+	background-color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0 30px -10px black;
+}
+
+.infoContainer:nth-of-type(3) .ImageAbout {
+	background-image: url('../Content/Images/1.jpg');
+}
+
+.infoContainer:nth-of-type(6) .ImageAbout {
+	background-image: url('../Content/Images/2.png');
+}
+
+/*KONTAKT*/
+.contactWrapper {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contactContainer {
+	border-radius: 20px;
+	margin: 2.5%;
+	padding: 50px 40px;
+	flex-basis: 45%;
+	background-color: darkorange;
+	box-shadow: 0 0 30px -10px black;
+}
+
+.contactContainer ul {
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+.contactContainer ul li {
+	font-size: 1.3rem;
+	line-height: 1.4;
+}
+
+.contactContainer ul li:nth-child(1) {
+	font-weight: bold;
+}
+
+.contactContainer:nth-child(1) ul:nth-of-type(2) li:nth-child(1) {
+	font-weight: normal;
+}
+
+.contactContainer:nth-child(1) > h1 {
+	margin-bottom: 30px;
+}
+
+.contactContainer:nth-child(1) ul {
+	margin-bottom: 70px;
+}
+
+.ourBranches {
+	flex-basis: 95%;
+	border-radius: 20px;
+	margin: 0 2.5% 2.5% 2.5%;
+	background-color: darkorange;
+	padding: 50px 40px;
+	box-shadow: 0 0 30px -10px black;
+}
+
+.ourBranches h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.ourBranches ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ourBranches ul li {
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+	font-size: 1.5rem;		
+	background-color: orange;
+	padding: 20px 50px;
+	transition: .1s;
+	transform: translate(0, 0);
+}
+
+.ourBranches ul li:hover {
+	box-shadow: none;		
+	transform: translate(3px, 3px);
+}
+
+.contactTitle {
+	margin-top: 2.5%;
+	margin-left: 2.5%;
+	font-size: 2rem;
+}
+
+/*GŁÓWNA STRONA*/
+.mainPageWrapper {
+	margin-top: 180px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.mainPageWrapper > h1 {
+	text-align: center;
+	padding: 30px 0;
+	font-size: 3rem;
+}
+
+.topInfo {
+	position: relative;
+	width: 100%;
+	height: 30%;
+	padding: 50px 0;
+	background-color: darkorange;
+	border-radius: 10px;
+}
+
+.mainPageWrapper ul {
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	list-style: none;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.mainPageWrapper ul li {
+	font-size: 1.6rem;
+	background-color: orange;
+	padding: 20px 15px;
+	transition: .1s;
+	transform: translate(0, 0);
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+}
+
+.mainPageWrapper ul li:hover {
+	box-shadow: none;
+	transform: translate(3px, 3px);
+}
+
+.mainInfo {
+	height: 70vh;
+	width: 90%;
+	margin: 0 auto 20px auto;
+}
+
+.infoSlider {
+	transform: translateY(-20px);
+	border-radius: 10px;
+	width: 100%;
+	height: 70%;
+	background-color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../Content/Images/3.jpg');
+	box-shadow: 0 5px 10px black;
+	filter: brightness(45%);
+}
+
+/*VIEWALL*/
+.Title {
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+.Wrapper {
+	padding: 50px;
+}
+
+.Wrapper > p {
+	text-align: center;
+}
+
+.Wrapper > p a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-size: 1.5rem;
+	padding: 10px 20px;
+	background-color: orange;
+	transition: background-color .3s;
+	border-radius: 10px;
+}
+
+.Wrapper > p a:hover {
+	background-color: darkorange;
+}
+
+.table {
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 90px;
+	padding: 30px;
+	background-color: orange;
+	border-radius: 30px;
+	box-shadow: 0 0 50px -30px black;
+}
+
+.table tr:nth-of-type(1) th {
+    font-size: 1.5rem;
+	padding-bottom: 30px;
+}
+
+.table td {
+	text-align: center;
+	font-size: 1.4rem;
+	padding-bottom: 20px;
+}
+
+.table tr td a {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+}
+
+.table tr td a:hover {
+    text-decoration: underline;
+}
+
+.ModelAddWrapper {
+	width: 100%;
+}
+/*CREATE*/
+.addTitle {
+	text-align: center;
+	margin: 50px 0;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+}
+
+.addForm {
+	text-align: center;
+}
+
+.form {
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+input,
+select {
+	width: 300px;
+	height: 40px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.addButton input {
+	cursor: pointer;
+	border: none;
+	background-color: orange;
+	transition: .1s;
+	transform: translate(0, 0);
+	box-shadow: 3px 3px 3px black;
+}
+
+.addButton input:hover {
+	box-shadow: none;
+	transform: translate(3px, 3px);
+}
+
+.form label {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.back {
+	text-align: center;
+	margin-top: 70px;
+}
+
+.back a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	font-size: 1.4rem;
+	transition: color .3s;
+}
+
+.back a:hover {
+	color: orange;
+}
+/*DELETE*/
+.deleteForm {
+	width: 100%;
+}
+
+.deleteForm dl {
+	text-align: center;
+}
+
+.deleteForm dl dt {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.deleteForm dl dd {
+	margin: 0 auto;
+	width: 200px;
+	border-radius: 10px;
+	font-size: 1.3rem;
+	padding: 10px 20px;
+	background-color: orange;
+}
+
+.sureDelete {
+	margin: 50px 0 30px 0;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.backDel {
+	align-items: center;
+	display: flex;
+	width: 100%;
+	margin: 30px 0 50px 0;
+	justify-content: space-around;
+}
+
+.backDel > * {
+	text-decoration: none;
+	color: black;
+	border: none;
+	background-color: orange;
+	padding: 20px 50px;
+	margin: 0;
+	transition: .1s;
+	transform: translate(0, 0);
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	height: 60px;
+	cursor: pointer;
+}
+
+.backDel > *:hover {
+	box-shadow: none;
+	transform: translate(3px, 3px);
+}
+
+/*LOGOWANIE*/
+.registerNew a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: black;
+	text-transform: uppercase;
+}
+
+.registerNew {
+	margin-bottom: 50px;
+}
+
+.checkbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#RememberMe {
+	margin: 0;
+	width: 100px;
+}
+
+/*ZARZĄDZANIE LOGOWANIEM*/
+.menPas {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.menPas dt {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.menPas dd a,
+.menPas dd {
+    margin-top: 20px;
+	font-size: 1.5rem;
+	color: orange;
+	text-decoration: none;
+	transition: color .3s;
+}
+
+.menPas dd a:hover {
+	color: darkorange;
+}
+
+/*EDYCJA*/
+.editButton {
+	font-size: 1.6rem;
+	background-color: orange;
+	padding: 20px 15px;
+	height: 70px;
+	border: none;
+	transition: .1s;
+	transform: translate(0, 0);
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px black;
+}
+
+.editButton:hover {
+	box-shadow: none;
+	transform: translate(3px, 3px);
+	}
+
+/*BŁĄD WALIDACJI*/
+.field-validation-error {
+	display: block;
+	font-size: 1rem;
+	color: red;
+	font-weight: 400;
+}
+
+.formHidden {
+	display: none;
+}

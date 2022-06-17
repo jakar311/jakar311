@@ -1,0 +1,78 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Wynajem
+
+@{
+    ViewBag.Title = "Usuń wynajem";
+}
+
+<h2 class="addTitle">Usuń wynajem</h2>
+
+<h3 class="sureDelete">Czy napewno chcesz usunąć?</h3>
+<div  class="deleteForm">
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Klient.ImieKlienta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Klient.ImieKlienta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pracownik.ImiePracownika)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pracownik.ImiePracownika)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rezerwacja.Miasto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rezerwacja.Miasto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Koszt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Koszt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WynajemOd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WynajemOd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WynajemDo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WynajemDo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RezerwacjaID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RezerwacjaID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div  class="backDel">
+            <input type="submit" value="Usuń" /> |
+            @Html.ActionLink("Powrót", "Viewall")
+        </div>
+    }
+</div>

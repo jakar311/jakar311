@@ -1,0 +1,91 @@
+﻿@model WypozyczalniaProjekt.Models.DbModels.Rezerwacja
+
+@{
+    ViewBag.Title = "Edycja rezerwacji";
+}
+
+<h2 class="addTitle">Edycja rezerwacji</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div  class="addForm">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.RezerwacjaID)
+
+        <div class="form">
+            @Html.LabelFor(model => model.RezerwacjaOd)
+            <div>
+                @Html.EditorFor(model => model.RezerwacjaOd)
+                @Html.ValidationMessageFor(model => model.RezerwacjaOd, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.RezerwacjaDo)
+            <div>
+                @Html.EditorFor(model => model.RezerwacjaDo)
+                @Html.ValidationMessageFor(model => model.RezerwacjaDo, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.LokalizacjaID, "LokalizacjaID")
+            <div>
+                @Html.DropDownList("LokalizacjaID",  null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Miasto, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.Miasto)
+            <div>
+                @Html.EditorFor(model => model.Miasto)
+                @Html.ValidationMessageFor(model => model.Miasto, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.KlientID, "KlientID")
+            <div>
+                @Html.DropDownList("KlientID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.KlientID, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.NazwiskoKlienta)
+            <div>
+                @Html.EditorFor(model => model.NazwiskoKlienta)
+                @Html.ValidationMessageFor(model => model.NazwiskoKlienta, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.ModelID, "ModelID")
+            <div>
+                @Html.DropDownList("ModelID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ModelID, "")
+            </div>
+        </div>
+
+        <div class="form">
+            @Html.LabelFor(model => model.NazwaModelu)
+            <div>
+                @Html.EditorFor(model => model.NazwaModelu)
+                @Html.ValidationMessageFor(model => model.NazwaModelu, "")
+            </div>
+        </div>
+
+        <div class="form">
+            <div>
+                <input type="submit" value="Zapisz" class="editButton" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="back">
+    @Html.ActionLink("Powrót", "ViewAll")
+</div>
